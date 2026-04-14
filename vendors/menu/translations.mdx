@@ -1,0 +1,84 @@
+---
+title: "Translations"
+description: "Offer your menu in multiple languages. Diners pick their language from the menu header."
+sidebarTitle: "Translations"
+icon: "language"
+---
+
+Rumizi runs one menu in as many languages as you want. You translate the
+parts diners actually read — item names, descriptions, and category names —
+and Rumizi handles the switching.
+
+## Languages Rumizi supports today
+
+English, Spanish, Italian, Arabic, Hindi, Persian (Farsi), French, Chinese,
+Punjabi, and Tagalog. Right-to-left languages (Arabic, Persian) render
+right-to-left automatically.
+
+## Set up your languages
+
+<Steps>
+  <Step title="Open Settings → Languages">
+    In the workspace, go to **Settings → Languages**.
+  </Step>
+  <Step title="Pick your default language">
+    This is what diners see if they haven't chosen anything else, and what
+    fills in when a translation is missing.
+  </Step>
+  <Step title="Add supported languages">
+    Choose every language you want diners to be able to switch to.
+  </Step>
+  <Step title="Save">
+    Once you save, the **Translations** tab appears inside every menu
+    editor.
+  </Step>
+</Steps>
+
+## Translate your items
+
+<Steps>
+  <Step title="Open the Translations tab">
+    In the menu editor, swipe to **Translations**.
+  </Step>
+  <Step title="Fill in each language">
+    For every supported language, fill in the translated name and
+    description per category and per item. You don't have to translate
+    everything at once — any missing translation falls back to the
+    default language.
+  </Step>
+  <Step title="Publish">
+    Translations are part of the menu snapshot. Publish the menu to push
+    them live. See [Publish and preview](/vendors/menu/publish).
+  </Step>
+</Steps>
+
+## How diners switch languages
+
+Diners see a language switcher in the menu header. Tapping it shows only
+the languages **you** enabled, not all ten. Their choice is remembered in
+the browser for future visits.
+
+<Tip>
+The switcher also changes the tags on items (e.g. "Vegetarian") into the
+diner's language, so you don't end up with mixed-language menus.
+</Tip>
+
+## Fallback rules
+
+- If a diner picks a language you support but the item isn't translated
+  yet, Rumizi falls back to your **default language**.
+- If a diner picks a language you don't support, Rumizi falls back to the
+  default language for everything.
+
+You won't end up showing blank names or descriptions.
+
+## Related
+
+<Columns cols={2}>
+  <Card title="Edit your menu" icon="pencil" href="/vendors/menu/editing">
+    Full editor walk-through.
+  </Card>
+  <Card title="Tags and filters" icon="tag" href="/vendors/menu/tags">
+    Tags translate with the switcher.
+  </Card>
+</Columns>

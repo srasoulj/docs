@@ -1,0 +1,99 @@
+---
+title: "Publish and preview"
+description: "How editing, previewing, and publishing your menu works. Diners only see what you publish."
+sidebarTitle: "Publish and preview"
+icon: "eye"
+---
+
+Rumizi separates **working copy** (what you're editing) from **published
+copy** (what diners see). Every change you make is invisible to the public
+until you publish it.
+
+## Working vs published
+
+<Columns cols={2}>
+  <Card title="Working copy" icon="pen">
+    The live editor state — items, categories, modifiers, photos. Only
+    you and your staff see it. Edit freely; nothing leaks to diners.
+  </Card>
+  <Card title="Published copy" icon="globe">
+    An immutable snapshot of the menu that diners actually scan. You
+    create it by pressing **Publish**.
+  </Card>
+</Columns>
+
+## Publishing
+
+<Steps>
+  <Step title="Finish your edits">
+    Get everything in the editor the way you want it.
+  </Step>
+  <Step title="Tap Publish">
+    From the menu editor header, tap **Publish**. Rumizi takes a
+    snapshot of the current menu and marks that snapshot as the live one.
+  </Step>
+  <Step title="Diners see it instantly">
+    The next scan of your QR code shows the new menu. Nothing else to do.
+  </Step>
+</Steps>
+
+<Tip>
+The **Menus** list in your workspace shows "Unpublished changes" next to
+any menu where the working copy is ahead of the published copy.
+</Tip>
+
+## Preview before publishing
+
+If you want to see how a change looks to a diner without publishing it:
+
+<Steps>
+  <Step title="Open your public menu URL">
+    Go to `rumizi.com/your-venue`.
+  </Step>
+  <Step title="Add the preview flag">
+    Append `?menu=<menu-id>` to the URL. When you're signed in as owner or
+    staff, that URL shows the **working** copy instead of the published
+    snapshot.
+  </Step>
+  <Step title="Check it, then publish">
+    Happy with the preview? Go back to the editor and publish.
+  </Step>
+</Steps>
+
+## Revert the last publish
+
+Pushed something by accident? From the menu editor header, pick **Revert
+last publish**. The pointer moves back to the previous published snapshot.
+Diners see the previous version immediately.
+
+## A few things that don't need a publish
+
+Some changes are live immediately, because they're about **availability**
+rather than **content**:
+
+- Marking an item as **Out of stock** (or back in stock).
+- Toggling **Featured** on an item (adds or removes it from the Popular
+  row).
+
+Those take effect on the next page load without any publishing.
+
+## Multiple menus
+
+If you have several menus (for example *Lunch* and *Dinner*), each one
+publishes independently. The menu that appears to diners first is
+controlled by [open hours](/vendors/menu/scheduling) and the order you set
+in the **Menus** list.
+
+## Related
+
+<Columns cols={2}>
+  <Card title="Edit your menu" icon="pencil" href="/vendors/menu/editing">
+    Full editor walk-through.
+  </Card>
+  <Card title="Open hours" icon="clock" href="/vendors/menu/scheduling">
+    Schedule a lunch and dinner menu.
+  </Card>
+  <Card title="Availability and stock" icon="circle-dot" href="/vendors/menu/availability">
+    How "out of stock" works for diners.
+  </Card>
+</Columns>

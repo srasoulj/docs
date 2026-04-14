@@ -1,0 +1,125 @@
+---
+title: "Edit your menu"
+description: "Change names, prices, descriptions, photos, modifiers, and more from the vendor workspace."
+sidebarTitle: "Edit your menu"
+icon: "pencil"
+---
+
+The menu editor is where you shape what diners see. It's organised as one
+scrollable carousel of tabs — everything you need is one swipe away.
+
+## Where it lives
+
+Your workspace menu editor is at `rumizi.com/your-venue/w/menu/{menu-id}`.
+Open it from **Menus** in the workspace and pick the menu you want to edit.
+
+## The tabs, in order
+
+<Tabs>
+  <Tab title="Items">
+    Your main editing surface. Each row is an item with its name, price,
+    description, tags, and photo. You can:
+
+    - Change names, prices, and descriptions.
+    - Add a photo (upload, pick from the gallery, or generate with AI).
+    - Add modifiers — sizes, extras, spice level, anything with a choice.
+    - Mark an item as **Out of stock** with a return time.
+    - Pin to the **Popular** carousel that diners see first.
+  </Tab>
+  <Tab title="Categories">
+    Group items into sections like *Starters*, *Mains*, *Desserts*. You
+    can drag to reorder, add a category photo, and write a short
+    description that appears above the items.
+  </Tab>
+  <Tab title="Modifiers">
+    Build reusable option groups — *Size: S/M/L*, *Spice level*, *Milk
+    choice*. Attach a group to any item or category.
+  </Tab>
+  <Tab title="Cross-sell">
+    Suggest complementary items on the item detail page. For example,
+    pair *Margherita pizza* with *Sparkling water*. Pairs are
+    directional, so you can suggest the drink from the pizza without
+    suggesting the pizza from the drink.
+  </Tab>
+  <Tab title="Schedule">
+    Set the hours this menu is available. See
+    [Open hours](/vendors/menu/scheduling).
+  </Tab>
+  <Tab title="Translations">
+    Add translated names and descriptions for each language you support.
+    See [Translations](/vendors/menu/translations).
+  </Tab>
+  <Tab title="Basics">
+    Menu name, description, visual theme, currency, and the AI
+    assistant context for this menu. See
+    [Venue theme](/vendors/venue/theme).
+  </Tab>
+</Tabs>
+
+## Saving works across tabs
+
+You can edit Items, swipe to Schedule, edit there, swipe to Translations,
+and keep going. Rumizi remembers what's unsaved on every tab.
+
+When you leave the editor, refresh, or tap the browser back button, you're
+asked whether to **save all**, **discard all**, or jump to the first tab
+with unsaved changes. You won't lose work by accident.
+
+<Tip>
+The **Save all** button in the editor header saves every dirty tab in one
+click.
+</Tip>
+
+## Item availability — the "86" flow
+
+When something runs out, open the item and pick an availability mode:
+
+- **In stock** — available now.
+- **Out until you change it** — indefinite.
+- **Out until tomorrow** — comes back at midnight in your venue's
+  timezone.
+- **Out until next opening** — comes back when your next scheduled menu
+  window starts (needs [open hours](/vendors/menu/scheduling)).
+
+Out-of-stock changes are live immediately — you don't need to republish.
+
+## Featured items (the Popular carousel)
+
+Toggle **Featured** on an item to pin it to the **Popular** row that shows
+at the top of the menu. It's how you highlight the chef's picks, the new
+dish, or whatever you want diners to try first.
+
+## Photos
+
+Items with photos convert better. You can:
+
+- Upload a photo from your phone or computer.
+- Pick an existing image from the [gallery](/vendors/media/gallery).
+- Generate one with AI from the item name and description — see
+  [AI images](/vendors/media/ai-images).
+- Improve an existing photo with AI (remove clutter, brighten, recompose).
+
+## Publishing what you edited
+
+<Warning>
+Edits are hidden from diners until you publish. If you want to preview what
+a change looks like from a diner's point of view first, see
+[Publish and preview](/vendors/menu/publish).
+</Warning>
+
+## Related
+
+<Columns cols={2}>
+  <Card title="Upload a menu file" icon="upload" href="/vendors/menu/upload">
+    Start from a photo, PDF, or URL.
+  </Card>
+  <Card title="Publish and preview" icon="eye" href="/vendors/menu/publish">
+    How publishing works.
+  </Card>
+  <Card title="Tags and filters" icon="tag" href="/vendors/menu/tags">
+    Mark vegetarian, spicy, new, chef's pick.
+  </Card>
+  <Card title="Cross-sell" icon="arrows-split-up-and-left" href="/vendors/menu/cross-sell">
+    Suggest pairings on item detail.
+  </Card>
+</Columns>

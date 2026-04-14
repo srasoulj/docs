@@ -1,0 +1,94 @@
+---
+title: "Venue landing page"
+description: "Show a hero image, your story, and opening hours above the menu. Optional but makes a great first impression."
+sidebarTitle: "Landing page"
+icon: "window"
+---
+
+The landing page is an optional intro section that appears above the menu
+on your public URL. Use it to introduce your venue before the diner sees
+the food — a hero image, a short story, your hours, whatever fits.
+
+## Where to build it
+
+In your workspace, go to **Settings → Landing page**. You'll see a block
+editor with a hero image slot and content blocks underneath.
+
+## What goes on a landing page
+
+<Columns cols={2}>
+  <Card title="Hero image" icon="image">
+    A full-width banner at the top. Upload your own, pick from the
+    [gallery](/vendors/media/gallery), or generate one with AI.
+  </Card>
+  <Card title="Venue name and description" icon="align-left">
+    A short intro paragraph. AI can draft this from your venue details.
+  </Card>
+  <Card title="Owner message" icon="message">
+    A personal note from you to your diners. AI can draft a friendly
+    version.
+  </Card>
+  <Card title="Hours" icon="clock">
+    A readable version of your opening hours.
+  </Card>
+  <Card title="Content sections" icon="rectangle-list">
+    Add text-and-image sections for whatever else you want to say — the
+    story, the chef, the awards, anything.
+  </Card>
+</Columns>
+
+## Publishing the landing page
+
+The landing page has its own publish flow, separate from the menu:
+
+<Steps>
+  <Step title="Edit">
+    Make your changes in the editor. They're saved as a working copy and
+    aren't visible to diners yet.
+  </Step>
+  <Step title="Preview">
+    Add `?landingPreview=1` to your public URL while signed in as owner
+    or staff to see the working landing page above your menu.
+  </Step>
+  <Step title="Publish">
+    Tap **Publish** in the landing editor. The new layout appears above
+    the menu on the next scan.
+  </Step>
+</Steps>
+
+## Skipping the landing page
+
+If you leave the hero slot empty and don't add any content blocks, the
+public URL skips straight to the menu. There's no "empty landing shell"
+showing up for diners.
+
+<Tip>
+If you just want a tight, menu-first experience, skip the landing page
+entirely. The QR menu experience is designed to work great without it.
+</Tip>
+
+## AI helpers
+
+Rumizi can draft landing content for you:
+
+- **Generate description** — writes a short venue intro.
+- **Generate owner message** — writes a friendly welcome note.
+- **Generate section text** — drafts text for a content block based on
+  your topic.
+- **Generate hero image** — creates a banner image from your venue
+  details.
+- **Improve hero image** — upgrades an existing banner photo.
+- **Generate logo** — creates a simple logo mark if you don't have one.
+
+All AI output is editable — you're never stuck with what it suggests.
+
+## Related
+
+<Columns cols={2}>
+  <Card title="Gallery" icon="images" href="/vendors/media/gallery">
+    Where landing page images live.
+  </Card>
+  <Card title="Theme" icon="palette" href="/vendors/venue/theme">
+    Pick a visual style that runs across the landing page and menu.
+  </Card>
+</Columns>

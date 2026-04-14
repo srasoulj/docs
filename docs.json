@@ -1,68 +1,104 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Rumizi",
+  "description": "Help center for Rumizi vendors and diners.",
   "colors": {
     "primary": "#16A34A",
-    "light": "#07C983",
+    "light": "#22C55E",
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "For vendors",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Get started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "vendors/index",
+              "vendors/first-menu"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Your menu",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "vendors/menu/upload",
+              "vendors/menu/editing",
+              "vendors/menu/publish",
+              "vendors/menu/scheduling",
+              "vendors/menu/translations",
+              "vendors/menu/tags",
+              "vendors/menu/cross-sell",
+              "vendors/menu/availability"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Media",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "vendors/media/gallery",
+              "vendors/media/ai-images"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Your venue page",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "vendors/venue/landing-page",
+              "vendors/venue/theme",
+              "vendors/venue/languages"
+            ]
+          },
+          {
+            "group": "AI assistant",
+            "pages": [
+              "vendors/assistant/overview"
+            ]
+          },
+          {
+            "group": "Billing",
+            "pages": [
+              "vendors/billing/subscription"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "vendors/faq"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "For diners",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Using Rumizi",
             "pages": [
-              "api-reference/introduction"
+              "diners/index",
+              "diners/scan-and-browse",
+              "diners/accounts",
+              "diners/order-together",
+              "diners/menu-assistant",
+              "diners/languages"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Help",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "diners/faq"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Reference",
+        "groups": [
+          {
+            "group": "Reference",
+            "pages": [
+              "reference/glossary",
+              "reference/status"
             ]
           }
         ]
@@ -71,14 +107,14 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Rumizi site",
+          "href": "https://rumizi.com",
+          "icon": "house"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Vendor dashboard",
+          "href": "https://rumizi.com/login",
+          "icon": "user"
         }
       ]
     }
@@ -91,32 +127,31 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:hi@rumizi.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Open Rumizi",
+      "href": "https://rumizi.com"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/rumizi",
+      "github": "https://github.com/srasoulj/rumizi"
     }
   }
 }
