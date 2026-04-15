@@ -1,78 +1,112 @@
 ---
-title: "Subscription and billing"
-description: "Rumizi subscription plans, how to upgrade, and what happens when a trial ends."
-sidebarTitle: "Subscription"
+title: "Billing and AI credits"
+description: "Rumizi is free to use — you only pay for AI usage. Every venue starts with $20 of AI credit and can top up any time."
+sidebarTitle: "Billing"
 icon: "credit-card"
 ---
 
-Rumizi runs on one simple plan with a choice of billing cadence. No tiers,
-no feature unlocks — everything you see in your workspace is part of the
-plan.
+Rumizi is **free software**. There's no monthly fee, no trial, and no
+feature gates on the workspace itself. The only thing you ever pay for is
+**AI usage** — and you only pay for what you actually use.
 
-## The plan
+## How it works
 
 <Columns cols={2}>
-  <Card title="Monthly" icon="calendar">
-    **$35 / month**, billed in USD. Cancel any time; you keep the plan
-    until the end of the current period.
+  <Card title="The software is free" icon="gift">
+    Upload menus, edit, publish, translate, share QR codes, invite staff —
+    all of it is free, forever, with no time limit.
   </Card>
-  <Card title="Yearly" icon="calendar-days">
-    **$350 / year**, billed in USD. Two months free compared with the
-    monthly plan.
+  <Card title="You pay for AI usage" icon="sparkles">
+    Things like menu extraction, the vendor and diner assistants, and AI
+    image generation draw from your **AI credit** balance.
   </Card>
 </Columns>
 
-## Subscribe
+## $20 free credit on day one
+
+Every new venue starts with **$20 of free AI credit**. No card required,
+no time limit — the credit doesn't expire and you don't need a
+subscription to use it.
+
+That's enough to extract a typical menu, generate a handful of item
+photos, and answer plenty of diner questions before you ever need to top
+up.
+
+## Topping up
+
+When you want more credit, you can add any amount from **$1 to $10,000**
+in a single top-up, from the very first day. There's no minimum
+commitment and no recurring charge — you decide when and how much to
+add.
 
 <Steps>
   <Step title="Open Billing">
     In the workspace, go to **Billing**. Direct URL:
     `rumizi.com/your-venue/w/billing`.
   </Step>
-  <Step title="Pick a cadence">
-    Tap **Monthly** or **Yearly**. You're redirected to Stripe's secure
-    checkout page.
+  <Step title="Pick an amount">
+    Type any amount between $1 and $10,000, or pick one of the suggested
+    top-ups.
   </Step>
-  <Step title="Pay">
-    Fill in your card details on Stripe. Rumizi never sees your card
+  <Step title="Pay on Stripe">
+    You're sent to Stripe's secure checkout. Rumizi never sees your card
     number.
   </Step>
-  <Step title="You're active">
-    After a successful payment, Stripe sends a confirmation back to
-    Rumizi and your venue is marked active. You can go back to your
-    workspace.
+  <Step title="Credit lands instantly">
+    After a successful payment, your AI credit balance is updated right
+    away. You can go straight back to using the assistant, generating
+    images, or extracting menus.
   </Step>
 </Steps>
 
-## Trials and grace periods
+## How AI usage is priced
 
-New venues start on a **trial**. You get the full workspace and a live
-public menu during the trial — nothing is gated behind a subscription
-during this window.
+Rumizi runs AI through **OpenRouter**. We bill you the OpenRouter cost
+of every request plus a flat **25% markup**, and that total comes out of
+your AI credit balance.
 
-When the trial ends, your venue moves to a short **grace period** before
-it's blocked. If you subscribe during either window, no interruption for
-your diners.
+There are no per-feature fees, no minimum charges per call, and no
+"premium model" surcharges beyond what OpenRouter itself charges. If a
+request costs OpenRouter $0.04, it costs you $0.05.
 
 <Note>
-If I ever have to block a venue for billing, the public menu is paused —
-diners see a "Temporarily unavailable" page, not a broken link. The
-moment you subscribe, it comes back.
+You can see your remaining balance and a breakdown of recent AI charges
+on the **Billing** page at any time.
 </Note>
 
-## 100% satisfaction
+## What happens when credit runs out
 
-If Rumizi doesn't work for you in the first month, email
+If your AI credit reaches zero, the AI features pause until you top up:
+
+- The vendor and diner **assistants** stop responding.
+- **Menu extraction** and **AI image generation** are unavailable.
+- The **public menu**, the cart, *Order together*, translations, and
+  every other non-AI feature keep working normally — your diners see no
+  interruption.
+
+Top up any amount and everything resumes immediately.
+
+## Coming later: premium subscription
+
+Down the road we plan to bundle some new features into an optional
+**premium subscription**. The current free-software-plus-AI-credit
+model isn't going anywhere — premium will be on top of it, for venues
+that want the extras.
+
+## Refunds
+
+If something doesn't feel right, email
 [hi@rumizi.com](mailto:hi@rumizi.com) and I'll sort it out personally.
 
 ## What's not in v1
 
 A few billing features aren't in this version yet:
 
-- **In-app cancel** — to cancel, email
-  [hi@rumizi.com](mailto:hi@rumizi.com) and I'll cancel for you.
-- **Change card in-app** — same: email me.
-- **Multi-currency billing** — today's plan is USD only. Menu prices are
+- **Auto top-up** — for now, every top-up is manual. Auto top-up when
+  your balance gets low is on the roadmap.
+- **In-app card management** — to update or remove a card, email
+  [hi@rumizi.com](mailto:hi@rumizi.com).
+- **Multi-currency billing** — top-ups are USD only. Menu prices are
   independent — your menu can be priced in any currency.
 
 ## Related
@@ -81,7 +115,7 @@ A few billing features aren't in this version yet:
   <Card title="Overview" icon="store" href="/vendors/index">
     Back to the vendor docs.
   </Card>
-  <Card title="FAQ" icon="question" href="/vendors/faq">
+  <Card title="FAQ" icon="circle-question" href="/vendors/faq">
     Common billing questions answered.
   </Card>
 </Columns>
