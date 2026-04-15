@@ -1,0 +1,110 @@
+---
+title: "Upload a menu file"
+description: "Drop a photo, PDF, or website link. Rumizi reads it into editable items with AI."
+sidebarTitle: "Upload a menu"
+icon: "upload"
+---
+
+You don't retype your menu. Rumizi's AI reads photos, scanned PDFs, and even
+existing menu web pages, then builds a draft menu you can edit and publish.
+
+## What you can upload
+
+<Columns cols={2}>
+  <Card title="Images" icon="image">
+    JPEG, PNG, WebP, HEIC, or GIF. Up to **20 files** per run. Blurry photos
+    still work but sharper images give cleaner results.
+  </Card>
+  <Card title="PDFs" icon="file">
+    Any menu PDF — printed, scanned, or exported from a designer tool.
+  </Card>
+  <Card title="Website link" icon="link">
+    Paste the URL of your existing menu page and I'll crawl it. Works for
+    single-page menus and multi-page sites (I follow up to five internal
+    links).
+  </Card>
+  <Card title="Plain text" icon="align-left">
+    Already have your menu in a Google Doc? Paste the text directly.
+  </Card>
+</Columns>
+
+## How to upload
+
+<Steps>
+  <Step title="Open the upload flow">
+    In your workspace, open **Menus → New menu**. The page lives at
+    `rumizi.com/your-venue/w/menu-submissions/new`.
+  </Step>
+  <Step title="Add your files or link">
+    Drag files in, or paste a URL. You can mix both — for example, upload a
+    dessert PDF alongside a photo of the drinks board.
+  </Step>
+  <Step title="Review what you uploaded">
+    I show you the files I'm about to read. Remove anything you don't want
+    included and tap **Continue**. Nothing is processed until you confirm.
+  </Step>
+  <Step title="Wait for extraction">
+    Extraction runs in the background. You can leave the page and come back
+    — I save progress and resume polling when you reload. Most menus finish
+    in under a minute.
+  </Step>
+  <Step title="Open the draft menu">
+    When the run finishes, tap **Edit extracted menu**. You're dropped into
+    the editor with categories, items, and prices already filled in. Edit
+    anything that's off, then publish when you're ready.
+  </Step>
+</Steps>
+
+## What you'll see in the draft
+
+Each run produces a **working copy** of a menu. That working copy is hidden
+from diners until you publish it — same rules as any other menu edit.
+
+<Note>
+Every upload creates a **new** menu rather than overwriting an existing one.
+This keeps your live menu safe if someone on your staff tests with a second
+file.
+</Note>
+
+## Limits
+
+- Up to **20 files** per upload.
+- Total upload size is capped for fairness; if a PDF is too big, split it.
+- Only one extraction run can be active per menu at a time — wait for the
+  current one to finish before starting another.
+
+## If something goes wrong
+
+<AccordionGroup>
+  <Accordion title="The output is missing items">
+    Try re-running on a sharper photo or a higher-quality PDF. Blurry
+    phone shots of laminated menus are the most common cause.
+  </Accordion>
+  <Accordion title="Prices look wrong">
+    The AI reads what it sees. Fix prices in the editor — it's a quick
+    column edit — and publish. Your correction is the final answer.
+  </Accordion>
+  <Accordion title="Ingredients or allergens came back blank">
+    Descriptions and allergens are optional. Add them in the item dialog —
+    the [menu assistant](/vendors/assistant/overview) can help write them.
+  </Accordion>
+  <Accordion title="The run failed completely">
+    Check that the files are readable (not password-protected PDFs) and
+    retry. If it keeps failing, email
+    [hi@rumizi.com](mailto:hi@rumizi.com) with the file and I'll take a
+    look.
+  </Accordion>
+</AccordionGroup>
+
+## Next
+
+Once your draft looks right, move on to:
+
+<Columns cols={2}>
+  <Card title="Edit your menu" icon="pencil" href="/vendors/menu/editing">
+    Full editor walk-through.
+  </Card>
+  <Card title="Publish and preview" icon="eye" href="/vendors/menu/publish">
+    How publishing works and how to preview first.
+  </Card>
+</Columns>

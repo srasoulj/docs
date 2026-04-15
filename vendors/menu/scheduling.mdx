@@ -1,0 +1,78 @@
+---
+title: "Open hours"
+description: "Set the hours a menu is available. Use it for breakfast, lunch, and dinner menus, or any other window."
+sidebarTitle: "Open hours"
+icon: "clock"
+---
+
+Each menu can have its own schedule — the hours when diners should see it.
+Open hours are also what powers the "Out until next opening" availability
+mode for out-of-stock items.
+
+## Where to set it
+
+In the menu editor, swipe to the **Schedule** tab. You'll see a seven-day
+grid, one column per day of the week.
+
+## Adding windows
+
+<Steps>
+  <Step title="Pick a day">
+    Tap a day to edit its windows.
+  </Step>
+  <Step title="Add a time range">
+    Set the start and end times — for example, **11:30 → 14:30** for
+    lunch. You can add more than one window per day. Lunch and dinner? Add
+    two windows.
+  </Step>
+  <Step title="Copy to other days">
+    Tap **Copy** on a configured day, then **Paste** on the next day. Fast
+    way to clone Monday's hours to Tuesday.
+  </Step>
+  <Step title="Save">
+    Tap **Save** in the toolbar. Nothing is saved until you do.
+  </Step>
+</Steps>
+
+## Presets and shortcuts
+
+- **24-hour preset** — tap to set a day to open all day (00:00 → 24:00).
+- **Clear day** — tap to remove every window for a day (menu is closed on
+  that day).
+- **Overlapping windows** are merged automatically. If you enter *11:00 →
+  13:00* and *12:30 → 15:00*, the editor saves a single *11:00 → 15:00*
+  window.
+
+## Timezone
+
+All times use your venue's timezone (set in **Settings**). If your venue
+is in Tehran and you set lunch to *12:00*, diners in any timezone see the
+menu open at 12:00 local time in Tehran.
+
+## How diners experience it
+
+Open hours power two things today:
+
+1. **Default menu selection** — when you have multiple menus, Rumizi picks
+   the menu whose current window is open for the next scan of your QR
+   code.
+2. **"Out until next opening"** — when you mark an item out of stock and
+   pick this mode, Rumizi brings it back at the start of the next
+   scheduled window.
+
+<Note>
+Open hours control which menu is *shown first*, not whether diners can
+scan your QR code. The menu is always reachable at your public URL — open
+hours just guide which menu is the default at a given time.
+</Note>
+
+## Related
+
+<Columns cols={2}>
+  <Card title="Edit your menu" icon="pencil" href="/vendors/menu/editing">
+    Full editor walk-through.
+  </Card>
+  <Card title="Availability and stock" icon="circle-dot" href="/vendors/menu/availability">
+    Out of stock and timed return.
+  </Card>
+</Columns>

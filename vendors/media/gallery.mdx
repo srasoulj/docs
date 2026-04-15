@@ -1,0 +1,88 @@
+---
+title: "Media gallery"
+description: "A per-venue library for every photo you use across your menu, item detail pages, and landing page."
+sidebarTitle: "Gallery"
+icon: "images"
+---
+
+The gallery is one place for every image your venue uses on Rumizi. Upload
+once and use a photo on as many items, categories, or the landing hero as
+you want. No re-uploading, no duplicates.
+
+## Where to find it
+
+In your workspace, go to **Gallery**. Direct URL:
+`rumizi.com/your-venue/w/gallery`.
+
+## Uploading
+
+<Steps>
+  <Step title="Drag or pick files">
+    You can upload one at a time or drop a batch in. Rumizi uploads in
+    parallel so a big batch is fast.
+  </Step>
+  <Step title="Automatic optimization">
+    Every upload is processed automatically. See
+    [Image optimization](#image-optimization) for what happens.
+  </Step>
+  <Step title="Use it">
+    Tap **Use for item** or **Use for category** on any gallery image to
+    copy it into a menu item, category, or landing page slot.
+  </Step>
+</Steps>
+
+## What you can upload
+
+- **JPEG, PNG, WebP, GIF** — standard formats, no conversion needed.
+- **HEIC / HEIF** — converted to WebP automatically (iPhone photos).
+- **Video** — short clips work for the landing page hero.
+
+## Image optimization
+
+Every upload is processed so your menu stays fast on mobile data:
+
+- **Resize** to max **2048px** on the long edge (never upscaled).
+- **Convert** to WebP at quality 80.
+- **Strip** EXIF metadata and auto-rotate.
+- **Skip** already-optimized WebP files under 100 KB.
+
+A 5 MB phone photo typically ends up under 300 KB without any visible
+quality loss.
+
+## Crawl from a URL
+
+If your dishes already have good photos on your own website, Rumizi can
+crawl the page and pull them into the gallery. Paste the URL on the
+gallery page, pick the ones you want, and import. Useful when migrating
+from another menu platform.
+
+## Bookmarklet
+
+For one-off grabs, you can drag the Rumizi bookmarklet into your browser
+bookmarks bar. While looking at a page with a photo you like, tap the
+bookmarklet — the images get pushed into your gallery. Safety limits keep
+the bookmarklet from pulling thousands of images at once.
+
+## Tags on media
+
+Each image can have tags. Filter by tag to find what you need quickly
+when your gallery grows past 50+ items.
+
+## Deleting
+
+Deleting an image removes it from the gallery but does **not** rip it out
+of the items you've already applied it to — those items keep a copy. If
+you want to swap an item photo, update the item instead of deleting from
+the gallery.
+
+## Related
+
+<Columns cols={2}>
+  <Card title="AI images" icon="sparkles" href="/vendors/media/ai-images">
+    Generate a photo from an item name and description, or improve an
+    existing one.
+  </Card>
+  <Card title="Landing page" icon="window" href="/vendors/venue/landing-page">
+    Use a gallery image as your hero banner.
+  </Card>
+</Columns>

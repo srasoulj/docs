@@ -1,0 +1,104 @@
+---
+title: "Rumizi Assistant"
+description: "A copilot inside the vendor workspace. It can create categories, add items, change prices, generate images, and more — always with your confirmation."
+sidebarTitle: "Overview"
+icon: "wand-magic-sparkles"
+---
+
+Rumizi Assistant is the AI copilot inside your workspace. Instead of
+clicking through menus and dialogs, you can tell it what you want and it
+drafts the change for you — then you **Apply** it.
+
+## Where to find it
+
+The assistant appears as a floating button on every workspace page at
+`/your-venue/w/*`. It isn't shown on the public customer menu.
+
+On the **Menu editor** pages, you can also open the assistant from an
+inline control in the header — same panel, closer to hand.
+
+## What it can do
+
+<Columns cols={2}>
+  <Card title="Build menus">
+    Create categories, add items, change prices, write descriptions, set
+    stock, rename things in bulk.
+  </Card>
+  <Card title="Schedules and tags">
+    Add and remove time windows on a menu. Create tags and attach them
+    to items.
+  </Card>
+  <Card title="Generate images">
+    Generate item or category photos from names and descriptions. Improve
+    existing photos.
+  </Card>
+  <Card title="Landing page">
+    Update the hero image or content blocks on your venue landing page.
+  </Card>
+  <Card title="Staff and billing">
+    Owner-only: generate magic links for staff, start Stripe checkout,
+    change the venue slug.
+  </Card>
+  <Card title="Read anything">
+    Ask "what's my most expensive dish" or "which categories have no
+    photos yet" — reads are free, no confirmation needed.
+  </Card>
+</Columns>
+
+## How changes get applied
+
+<Steps>
+  <Step title="You describe what you want">
+    In plain language: *"Add a pizza category with four items: Margherita
+    €9, Pepperoni €10, Quattro Formaggi €11, Marinara €8."*
+  </Step>
+  <Step title="The assistant drafts the change">
+    You see a **confirmation card** with the actual change laid out —
+    names, prices, whatever applies. No UUIDs, no raw JSON.
+  </Step>
+  <Step title="You tap Apply change">
+    The assistant runs the real action against your workspace. You see a
+    short summary: "Done — created four items in Pizza."
+  </Step>
+  <Step title="Undo if you need to">
+    Some creates (new items, new categories) come with an **Undo last
+    change** button. Edits are reversed by telling the assistant to undo
+    them, or editing in the menu builder.
+  </Step>
+</Steps>
+
+<Note>
+The assistant never changes anything without your **Apply change** tap.
+Reads are instant; writes always wait for you.
+</Note>
+
+## Role limits
+
+- **Owners** can use everything: menu edits, schedules, tags, images,
+  landing page, staff magic links, Stripe checkout, slug changes.
+- **Staff** can use most menu edits but can't run owner-only actions
+  (staff management, billing, slug). The assistant refuses and tells
+  you why.
+
+## Live support
+
+Alongside the assistant there's a separate **live chat** control for
+human support. It's a different button, powered by Intercom, and
+available only on workspace pages.
+
+## Turning off the AI assistant
+
+If you'd rather not have the assistant, your admin can disable it for
+your venue. The workspace still works the same way — you just won't see
+the floating button.
+
+## Related
+
+<Columns cols={2}>
+  <Card title="Edit your menu" icon="pencil" href="/vendors/menu/editing">
+    What you can do in the manual editor.
+  </Card>
+  <Card title="AI images" icon="sparkles" href="/vendors/media/ai-images">
+    Image generation used by the assistant and the manual editor.
+  </Card>
+</Columns>

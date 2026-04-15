@@ -1,0 +1,75 @@
+---
+title: "Availability and stock"
+description: "How to mark an item out of stock, how timed returns work, and what diners see."
+sidebarTitle: "Availability and stock"
+icon: "circle-dot"
+---
+
+When a dish runs out, you don't delete it — you **mark it out of stock**.
+Diners still see the item but it's visually dimmed and can't be added to
+the cart. This page walks through the options.
+
+## Where to change availability
+
+Open any item in the **Items** tab of the menu editor. The **Availability**
+picker is near the top of the dialog.
+
+## The four modes
+
+<Tabs>
+  <Tab title="In stock">
+    The default. The item is available and can be added to any cart.
+  </Tab>
+  <Tab title="Out until you change it">
+    Indefinite out-of-stock. The item stays unavailable until someone on
+    your team flips it back to **In stock**. Use this for discontinued
+    items or long supply problems.
+  </Tab>
+  <Tab title="Out until tomorrow">
+    The item is unavailable until the next local midnight in your venue's
+    timezone. Use this when you're out for the rest of the day — the item
+    comes back automatically at midnight without anyone having to
+    remember.
+  </Tab>
+  <Tab title="Out until next opening">
+    The item comes back at the start of your next
+    [scheduled window](/vendors/menu/scheduling). Use this for lunch-only
+    items that run out mid-service — they reappear the next time the menu
+    opens instead of at midnight.
+  </Tab>
+</Tabs>
+
+<Note>
+**Out until next opening** only works if you've set up [open hours](/vendors/menu/scheduling)
+for the menu. Without a schedule, Rumizi falls back to *tomorrow*.
+</Note>
+
+## Changes are instant
+
+Unlike content edits (name, price, description), availability flips are
+live immediately — you don't need to publish. A diner who reloads the
+page sees the change.
+
+## What diners see
+
+An out-of-stock item:
+
+- Still appears in the menu so diners understand the item exists.
+- Is visually dimmed and labelled "Unavailable".
+- Can't be added to the cart.
+- Can't be suggested by the [menu assistant](/vendors/assistant/overview).
+
+## Bringing an item back manually
+
+Flip the picker back to **In stock**. Done. The next page load shows it.
+
+## Related
+
+<Columns cols={2}>
+  <Card title="Edit your menu" icon="pencil" href="/vendors/menu/editing">
+    Full editor walk-through.
+  </Card>
+  <Card title="Open hours" icon="clock" href="/vendors/menu/scheduling">
+    Required for "Out until next opening".
+  </Card>
+</Columns>
