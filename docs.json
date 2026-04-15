@@ -148,10 +148,15 @@
       "vscode"
     ]
   },
+  "fonts": {
+    "family": "Lato"
+  },
+  "banner": {
+    "dismissible": false
+  },
   "footer": {
     "socials": {
-      "x": "https://x.com/rumizi",
-      "github": "https://github.com/srasoulj/rumizi"
+      "website": "https://rumizi.com"
     }
   }
 }
