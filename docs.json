@@ -151,9 +151,6 @@
   "fonts": {
     "family": "Lato"
   },
-  "banner": {
-    "dismissible": false
-  },
   "footer": {
     "socials": {
       "website": "https://rumizi.com"
