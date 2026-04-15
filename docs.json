@@ -158,5 +158,8 @@
     "socials": {
       "website": "https://rumizi.com"
     }
+  },
+  "icons": {
+    "library": "lucide"
   }
 }
