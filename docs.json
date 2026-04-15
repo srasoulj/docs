@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "sequoia",
   "name": "Rumizi",
   "description": "Help center for Rumizi vendors and diners.",
   "colors": {
