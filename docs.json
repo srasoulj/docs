@@ -164,5 +164,11 @@
   },
   "seo": {
     "indexing": "all"
+  },
+  "metadata": {
+    "timestamp": true
+  },
+  "interaction": {
+    "drilldown": false
   }
 }
