@@ -161,5 +161,8 @@
   },
   "icons": {
     "library": "lucide"
+  },
+  "seo": {
+    "indexing": "all"
   }
 }
