@@ -1,6 +1,6 @@
 ---
 title: "Subscription and billing"
-description: "Rumizi subscription plans, how to upgrade, and what happens when a trial ends."
+description: "Rumizi subscription plans, how to upgrade, and what happens if a venue is paused for billing."
 sidebarTitle: "Subscription"
 icon: "credit-card"
 ---
@@ -39,25 +39,27 @@ plan.
   </Step>
   <Step title="You're active">
     After a successful payment, Stripe sends a confirmation back to
-    Rumizi and your venue is marked active. You can go back to your
+    Rumizi and your venue stays active. You can go back to your
     workspace.
   </Step>
 </Steps>
 
-## Trials and grace periods
+## Venue status
 
-New venues start on a **trial**. You get the full workspace and a live
-public menu during the trial — nothing is gated behind a subscription
-during this window.
+Venues have one of two statuses:
 
-When the trial ends, your venue moves to a short **grace period** before
-it's blocked. If you subscribe during either window, no interruption for
-your diners.
+- **Active** — the default. Your workspace is open, your public menu is
+  live, and diners can scan and browse normally.
+- **Blocked** — paused by Rumizi (for billing or policy reasons). The
+  public menu shows a "Temporarily unavailable" page; the workspace is
+  read-only. The moment the issue is resolved, your venue flips back to
+  Active.
 
 <Note>
-If I ever have to block a venue for billing, the public menu is paused —
-diners see a "Temporarily unavailable" page, not a broken link. The
-moment you subscribe, it comes back.
+New venues land as **Active** straight after sign-up — there's no
+separate trial state to track. If you ever need extra time before paying,
+email [hi@rumizi.com](mailto:hi@rumizi.com) and I'll set a plan end date
+that fits your launch timeline.
 </Note>
 
 ## 100% satisfaction

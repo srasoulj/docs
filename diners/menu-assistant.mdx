@@ -15,12 +15,37 @@ On a Rumizi menu, tap the **chat icon** in the header. A chat panel
 slides in over the menu. You can close it at any time and your cart
 stays where it was.
 
+<Tip>
+If the link you scanned ends with `?chat=1`, the assistant opens
+automatically with a short welcome ("Ask me what's popular, or anything
+else about this menu") so you can dive straight in.
+</Tip>
+
+## Quick suggestions
+
+The first time you open the assistant, you'll see a few one-tap
+suggestions that work for any restaurant:
+
+<Columns cols={3}>
+  <Card title="Best sellers" icon="star">
+    The most popular dishes at this venue right now.
+  </Card>
+  <Card title="Chef's recommendations" icon="hat-chef">
+    Picks the kitchen wants you to try.
+  </Card>
+  <Card title="Surprise me" icon="shuffle">
+    Let the assistant pick something for you based on what's on the menu.
+  </Card>
+</Columns>
+
+You can ignore the suggestions and type your own question at any time.
+
 ## What you can ask
 
 <Columns cols={2}>
-  <Card title="What's vegetarian?" icon="leaf">
-    *"Which of the starters are vegetarian?"* The assistant only
-    suggests items from the actual menu.
+  <Card title="What's popular here?" icon="star">
+    *"What do most people order?"* The assistant only suggests items from
+    the actual menu.
   </Card>
   <Card title="What's spicy?" icon="pepper-hot">
     *"Something spicy but not too heavy?"* It reads item descriptions
@@ -60,6 +85,13 @@ You can also ask the assistant to add things to your cart:
 The assistant never adds, removes, or changes anything in your cart
 without an explicit **Apply** tap from you.
 </Note>
+
+## Reopening the panel
+
+When you close the assistant and open it again later, your previous
+messages stay where they were — you won't see them retype themselves.
+New assistant replies in the current session still animate in as they
+arrive, so you can tell what's just been said.
 
 ## Clearing and starting over
 

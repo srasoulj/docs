@@ -60,7 +60,7 @@ while using a Rumizi menu.
 | --- | --- |
 | **Default language** | The venue's primary language. Used when a translation is missing. |
 | **Supported languages** | The languages a venue enables for its diners. |
-| **Language switcher** | The control in the menu header diners use to change language. |
+| **Language switcher** | The control in the menu header diners use to change language. Auto-shown when a venue has more than one supported language. |
 | **Locale** | The code for a language (e.g. `en`, `es`, `fa`). |
 
 ## Media
@@ -80,11 +80,20 @@ while using a Rumizi menu.
 | **Customer account** | An optional diner account scoped to a single venue (for posting in that venue's community). |
 | **Magic link** | A one-time sign-in link Rumizi emails to vendors instead of using passwords. |
 
+## Status and claims
+
+| Term | Meaning |
+| --- | --- |
+| **Active** | The default venue state. Workspace is open and the public menu is live. |
+| **Blocked** | A venue Rumizi has paused (billing or policy). Public menu shows a "Temporarily unavailable" page; workspace is read-only until it's unblocked. |
+| **Claimed** | Someone has been confirmed as the venue's owner. Self-registered venues are auto-claimed; pre-loaded venues are claimed when their owner verifies. |
+| **Unclaimed** | A pre-loaded venue that doesn't have a confirmed owner yet. The public menu shows a "Claim this business" banner. |
+| **Managed by Rumizi** | A small disclosure shown when the public claim flow is disabled for a venue — meaning Rumizi is operating the venue directly and no third-party claim is possible. |
+
 ## Billing
 
 | Term | Meaning |
 | --- | --- |
-| **Trial** | The free window at the start of a venue's life. Everything works; no card required. |
-| **Active** | The venue has a valid subscription (or a super-admin manual mark). |
-| **Grace period** | Short window after the trial ends before the public menu is paused. |
+| **Plan** | The subscription tier on a venue: *Free*, *Pro*, or *Max*. |
+| **Plan end date** | An optional date after which a plan stops being honored. Set by Rumizi for venues with a custom timeline; admins manually downgrade once it expires. |
 | **Stripe** | The billing provider Rumizi uses for card payments. |
