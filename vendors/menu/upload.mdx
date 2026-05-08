@@ -20,8 +20,9 @@ existing menu web pages, then builds a draft menu you can edit and publish.
   </Card>
   <Card title="Website link" icon="link">
     Paste the URL of your existing menu page and I'll crawl it. Works for
-    single-page menus and multi-page sites (I follow up to five internal
-    links).
+    single-page menus, multi-page sites (I follow up to five internal
+    links), and JavaScript-rendered menus on platforms like Toast, Square
+    Online, Shopify, and most delivery sites.
   </Card>
   <Card title="Plain text" icon="align-left">
     Already have your menu in a Google Doc? Paste the text directly.
@@ -39,6 +40,11 @@ existing menu web pages, then builds a draft menu you can edit and publish.
     Drag files in, or paste a URL. You can mix both — for example, upload a
     dessert PDF alongside a photo of the drinks board.
   </Step>
+  <Step title="Pick a scraper engine (URL only)">
+    When you paste a URL, Rumizi shows a **Scraper engine** choice. Leave
+    it on the default unless you have a reason to switch — see
+    [Scraper engines](#scraper-engines) below.
+  </Step>
   <Step title="Review what you uploaded">
     I show you the files I'm about to read. Remove anything you don't want
     included and tap **Continue**. Nothing is processed until you confirm.
@@ -54,6 +60,34 @@ existing menu web pages, then builds a draft menu you can edit and publish.
     anything that's off, then publish when you're ready.
   </Step>
 </Steps>
+
+## Scraper engines
+
+When you import from a URL, you pick how Rumizi fetches the page. Both
+engines feed the same extraction pipeline — the difference is only in how
+the page itself is loaded.
+
+<Columns cols={2}>
+  <Card title="Better quality (default)" icon="sparkles">
+    Loads your menu page in a real headless browser, so JavaScript runs
+    and the final rendered menu is what gets read. This is the right
+    choice for **Toast, Square Online, Shopify menu pages, and most
+    delivery platforms** — anywhere the menu is built by JS after the
+    page loads.
+  </Card>
+  <Card title="Fast (free)" icon="bolt">
+    Plain HTTP fetch — fast and free, but only sees the raw HTML the
+    server returns. Good enough for a static HTML or WordPress page where
+    the menu is already in the source. If a static site imports cleanly,
+    this saves the better-quality engine for sites that need it.
+  </Card>
+</Columns>
+
+<Note>
+If you pick **Better quality** and the page comes back empty or the run
+fails, switch to **Fast** and try again — and the other way round. Some
+sites prefer one or the other, and the choice is per-run, not sticky.
+</Note>
 
 ## What you'll see in the draft
 
@@ -79,6 +113,13 @@ file.
   <Accordion title="The output is missing items">
     Try re-running on a sharper photo or a higher-quality PDF. Blurry
     phone shots of laminated menus are the most common cause.
+  </Accordion>
+  <Accordion title="A URL import came back empty or skeletal">
+    The page is probably JavaScript-rendered and was fetched with the
+    **Fast** engine. Re-run with **Better quality** selected — that loads
+    the page in a real browser and sees the menu the same way a diner
+    would. If the run still fails, email
+    [hi@rumizi.com](mailto:hi@rumizi.com) with the URL.
   </Accordion>
   <Accordion title="Prices look wrong">
     The AI reads what it sees. Fix prices in the editor — it's a quick
