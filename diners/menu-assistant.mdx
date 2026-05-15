@@ -1,12 +1,12 @@
 ---
 title: "Menu assistant"
-description: "A chat assistant that knows the menu in front of you. Ask about dishes, allergens, recommendations, or build a cart by chatting."
+description: "A chat assistant that knows every menu at the venue. Ask about dishes, allergens, recommendations, or build a cart by chatting."
 sidebarTitle: "Menu assistant"
 icon: "sparkles"
 ---
 
-Rumizi has a built-in chat assistant that reads the same menu you see. Use
-it when there's too much to scroll through, when you have dietary
+Rumizi has a built-in chat assistant that reads the same menu you see.
+Use it when there's too much to scroll through, when you have dietary
 questions, or when you just can't decide.
 
 ## Where to find it
@@ -15,9 +15,29 @@ On a Rumizi menu, tap the **chat icon** in the header. A chat panel
 slides in over the menu. You can close it at any time and your cart
 stays where it was.
 
+At venues that surface Rumizi from a landing tile (for example, the
+"Chat with menu →" tiles on `rumizi.com`), the assistant opens by
+itself the first time you land on the menu — you don't need to tap
+anything.
+
+## A welcome that knows the menu
+
+The first message in the chat is a one-line overview of what the
+restaurant serves — categories on a single-menu venue, or every menu
+name when the venue has more than one — so you can see the breadth of
+the menu before you ask anything.
+
+If you're not sure where to start, tap the **Menu overview** quick
+action under the welcome message and the assistant will summarise the
+cuisines, signature categories, and vibe in a couple of sentences.
+
 ## What you can ask
 
 <Columns cols={2}>
+  <Card title="Menu overview" icon="list">
+    *"What do you serve here?"* The assistant gives a short, friendly
+    tour across every menu at the venue.
+  </Card>
   <Card title="What's vegetarian?" icon="leaf">
     *"Which of the starters are vegetarian?"* The assistant only
     suggests items from the actual menu.
@@ -35,7 +55,20 @@ stays where it was.
     info but always tells you to double-check with your server for
     anything critical.
   </Card>
+  <Card title="Show me the other menu" icon="layer-group">
+    *"Anything good on the brunch menu?"* The assistant sees every
+    active menu at the venue, not just the one you're viewing.
+  </Card>
 </Columns>
+
+## Asking across menus
+
+If the venue has more than one menu (for example, *Lunch* and
+*Dinner*), the assistant can see all of them. It biases its
+recommendations toward the menu you're currently viewing — so a
+"what's good?" question on the Dinner menu suggests Dinner dishes — but
+you can ask about anything on the other menus too. The reply tells you
+which menu each suggestion comes from.
 
 ## Building a cart by chat
 
