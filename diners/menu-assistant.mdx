@@ -1,6 +1,6 @@
 ---
 title: "Menu assistant"
-description: "A chat assistant that knows the menu in front of you. Ask about dishes, allergens, recommendations, or build a cart by chatting."
+description: "A chat assistant that knows every menu at the venue. Ask about dishes, allergens, recommendations, or build a cart by chatting."
 sidebarTitle: "Menu assistant"
 icon: "sparkles"
 ---
@@ -14,6 +14,44 @@ questions, or when you just can't decide.
 On a Rumizi menu, tap the **chat icon** in the header. A chat panel
 slides in over the menu. You can close it at any time and your cart
 stays where it was.
+
+The chat surface has a subtle fine-dining backdrop — a quiet pattern of
+place-setting marks — so it feels like part of the venue, not a generic
+text window. Assistant replies appear in full as soon as they're ready;
+nothing animates character-by-character.
+
+## Getting started: suggestion chips
+
+You don't have to know what to type. After the welcome message, and any
+time you're between turns, the assistant shows a row of **tappable
+chips** with icons — *What's popular?*, *Something light*, *Vegetarian?*,
+and so on. Tap one and it sends that question as if you'd typed it. The
+chips are also localized to the venue's language.
+
+## Multi-menu venues
+
+If a venue has more than one menu (for example **Brunch**, **Dinner**,
+**Wine**, **Desserts**), the assistant opens with a short, skippable
+flow so you land on the right one quickly:
+
+<Steps>
+  <Step title="Pick a menu, or answer a couple of questions">
+    The first screen shows a tidy grid of every menu currently being
+    served (with next-opening badges on the ones that aren't). Tap a
+    menu to focus the conversation on it, or answer 2–3 quick questions
+    (party size, food vs drinks, dietary needs) and the assistant
+    suggests the best fit.
+  </Step>
+  <Step title="Browse all menus if you want the full list">
+    Tap **Browse all menus** for a searchable popup grouped by what's
+    being served now vs later. Useful at venues with many sections.
+  </Step>
+  <Step title="Switch any time">
+    Once you're chatting, you can still say *"What about the wine
+    list?"* and the assistant will move with you. It biases toward the
+    menu you're focused on but can answer across all of them.
+  </Step>
+</Steps>
 
 ## What you can ask
 
@@ -35,7 +73,31 @@ stays where it was.
     info but always tells you to double-check with your server for
     anything critical.
   </Card>
+  <Card title="A quick overview" icon="list">
+    *"Standout picks from the Wine menu?"* The wording adapts to the
+    menu — you'll get **picks** rather than "dishes" when you're on a
+    drinks or dessert list.
+  </Card>
+  <Card title="Compare across menus" icon="layers">
+    *"What from the dessert menu would pair with this?"* The assistant
+    can reach into other menus at the venue without you switching tabs.
+  </Card>
 </Columns>
+
+## How replies look
+
+When the assistant recommends items, you see them as cards you can tap
+to open the full item page or add to your cart:
+
+- **One result** renders as a single full-width **hero card** — bigger
+  photo, full description, primary action right there.
+- **Two or more results** render as a swipeable **carousel** of compact
+  cards so you can scan side-by-side without scrolling away from the
+  chat.
+
+Out-of-stock items appear in the cards too, so the assistant can still
+talk about them, but the add-to-cart action is disabled until the venue
+flips them back on.
 
 ## Building a cart by chat
 
