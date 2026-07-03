@@ -1,6 +1,6 @@
 ---
 title: "Menu assistant"
-description: "A chat assistant that knows the menu in front of you. Ask about dishes, allergens, recommendations, or build a cart by chatting."
+description: "A chat assistant that knows the menu in front of you. Ask about dishes, allergens, recommendations, or build an order by tapping and swiping."
 sidebarTitle: "Menu assistant"
 icon: "sparkles"
 ---
@@ -12,8 +12,22 @@ questions, or when you just can't decide.
 ## Where to find it
 
 On a Rumizi menu, tap the **chat icon** in the header. A chat panel
-slides in over the menu. You can close it at any time and your cart
+slides in over the menu. You can close it at any time and your order
 stays where it was.
+
+## Quick intents
+
+You don't have to know what to type. A row of **quick-intent chips**
+sits directly above the message box in both the full-page chat and the
+floating panel:
+
+- **Best sellers** — the venue's most-ordered dishes.
+- **Chef's recommendations** — what the venue wants to spotlight.
+- **Surprise me** — a curated pick based on what's on the menu.
+
+The bar stays there for the whole conversation, so you can jump between
+intents without scrolling back up. It's a shortcut — anything a chip
+does you can also just say in your own words.
 
 ## What you can ask
 
@@ -37,42 +51,63 @@ stays where it was.
   </Card>
 </Columns>
 
-## Building a cart by chat
+After each reply, the assistant shows **contextual follow-up chips**
+under the answer — tailored to what it just said, not the same generic
+prompts every time. Tap one to keep the conversation going, or ignore
+them and type your own question.
 
-You can also ask the assistant to add things to your cart:
+## Building an order by chat
+
+The assistant helps you build your order without leaving the chat.
+There are three ways items land in your tray:
 
 <Steps>
-  <Step title="Describe what you want">
+  <Step title="One dish recommended? Tap to add.">
+    When the assistant suggests a single dish (for example, after
+    *Surprise me*), the reply shows a **dish card** with a quick-add
+    button. One tap puts it in your order tray.
+  </Step>
+  <Step title="Several dishes recommended? Swipe the deck.">
+    Multi-dish recommendations render as a **swipeable card deck**.
+    Swipe right (or tap the ✓) to add a dish to your tray, swipe left
+    (or tap the ✗) to skip. Tap the card itself to open full details
+    first. A progress indicator shows how far through the deck you are.
+  </Step>
+  <Step title="Ordering a full round? Describe it.">
     *"Add one Margherita, one Caesar salad, and two sparkling waters."*
-  </Step>
-  <Step title="Review the proposed change">
-    The assistant shows you exactly what it's about to add — names,
-    quantities, and any modifiers. Nothing touches your cart until you
-    confirm.
-  </Step>
-  <Step title="Tap Apply">
-    On confirmation, the items land in your cart. You can keep editing
-    from chat or switch back to the normal menu view.
+    The assistant shows a **confirmation card** with exactly what it's
+    about to add — names, quantities, modifiers — and nothing lands
+    until you tap **Apply**.
   </Step>
 </Steps>
 
 <Note>
-The assistant never adds, removes, or changes anything in your cart
-without an explicit **Apply** tap from you.
+Individual swipe/tap adds put dishes straight into your tray so
+building an order feels fluid. Bulk changes proposed as a batch still
+wait for your explicit **Apply** tap so you never get surprised.
 </Note>
+
+## Your order tray
+
+Above the message box there's a **persistent order tray** that shows
+the live count and subtotal of what you've added so far. It pulses
+briefly whenever something new lands so you can see the change without
+scrolling. Tap it any time to open the full order and edit quantities,
+modifiers, or notes — the same order you'd see from the menu's cart
+button. The tray hides itself when your order is empty.
 
 ## Clearing and starting over
 
 Tap **Clear chat** to wipe the conversation history on your phone. It
-doesn't clear your cart — only the chat messages.
+doesn't clear your order — only the chat messages.
 
 ## What the assistant can't do
 
-- **Order food for you.** It builds the cart, but the final
-  hand-off to the kitchen is up to you and your server.
+- **Order food for you.** It builds the order in your tray, but the
+  final hand-off to the kitchen is up to you and your server.
 - **Charge anything.** Rumizi's diner flow doesn't take payments.
 - **See other tables.** Each assistant session is scoped to the venue
-  you're at and the cart on your phone.
+  you're at and the order on your phone.
 
 ## A word on accuracy
 
@@ -88,6 +123,6 @@ ask twice than end up with something you can't eat.
     The basics of using a Rumizi menu.
   </Card>
   <Card title="Order together" icon="users" href="/diners/order-together">
-    Share the cart with your whole table.
+    Share the order with your whole table.
   </Card>
 </Columns>
