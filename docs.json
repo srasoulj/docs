@@ -76,6 +76,7 @@
             "group": "Using Rumizi",
             "pages": [
               "diners/index",
+              "diners/discover-restaurants",
               "diners/scan-and-browse",
               "diners/accounts",
               "diners/order-together",
