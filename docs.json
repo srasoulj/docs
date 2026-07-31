@@ -80,6 +80,7 @@
               "diners/accounts",
               "diners/order-together",
               "diners/menu-assistant",
+              "diners/drinks-assistant",
               "diners/languages"
             ]
           },
