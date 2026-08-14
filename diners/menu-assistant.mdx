@@ -1,19 +1,19 @@
 ---
 title: "Menu assistant"
-description: "A chat assistant that knows the menu in front of you. Ask about dishes, allergens, recommendations, or build a cart by chatting."
+description: "A chat assistant that knows the menu in front of you. Ask about dishes, allergens, and get recommendations."
 sidebarTitle: "Menu assistant"
 icon: "sparkles"
 ---
 
-Rumizi has a built-in chat assistant that reads the same menu you see. Use
-it when there's too much to scroll through, when you have dietary
+Rumizi has a built-in chat assistant that reads the same menu you see.
+Use it when there's too much to scroll through, when you have dietary
 questions, or when you just can't decide.
 
 ## Where to find it
 
 On a Rumizi menu, tap the **chat icon** in the header. A chat panel
-slides in over the menu. You can close it at any time and your cart
-stays where it was.
+slides in over the menu. You can also open it from any item's detail
+page with **Ask AI about this item** — the item comes in as context.
 
 ## What you can ask
 
@@ -37,42 +37,36 @@ stays where it was.
   </Card>
 </Columns>
 
-## Building a cart by chat
+## Guided discovery
 
-You can also ask the assistant to add things to your cart:
+If you're not sure what to ask, the assistant walks you through it. After
+the welcome card, it asks one short question at a time — *"Craving
+something warming or something fresh?"* — and each answer narrows the
+menu down. In two or three questions you land on 3–4 recommended dishes,
+shown as cards you can tap.
 
-<Steps>
-  <Step title="Describe what you want">
-    *"Add one Margherita, one Caesar salad, and two sparkling waters."*
-  </Step>
-  <Step title="Review the proposed change">
-    The assistant shows you exactly what it's about to add — names,
-    quantities, and any modifiers. Nothing touches your cart until you
-    confirm.
-  </Step>
-  <Step title="Tap Apply">
-    On confirmation, the items land in your cart. You can keep editing
-    from chat or switch back to the normal menu view.
-  </Step>
-</Steps>
+You can always type a question in plain language instead — the guided
+questions are a starting point, not a fixed script.
 
-<Note>
-The assistant never adds, removes, or changes anything in your cart
-without an explicit **Apply** tap from you.
-</Note>
+## The assistant remembers what you say
+
+Within a single venue, the assistant remembers what you told it you like
+or don't like ("I hate cilantro", "big fan of miso") and factors it into
+later answers. When it saves something, a small **Noted: … · Undo** row
+appears above the follow-up chips — tap **Undo** to drop it. Your tastes
+are scoped to this venue only; they don't follow you to other Rumizi
+restaurants.
+
+## What the assistant does not do
+
+- **Take your order.** Rumizi is browse-and-ask; the assistant helps you
+  decide, then you order with your server the way you normally would.
+- **Charge anything.** Rumizi's diner flow doesn't take payments.
+- **See other tables.** Each session is scoped to the venue you're at.
 
 ## Clearing and starting over
 
-Tap **Clear chat** to wipe the conversation history on your phone. It
-doesn't clear your cart — only the chat messages.
-
-## What the assistant can't do
-
-- **Order food for you.** It builds the cart, but the final
-  hand-off to the kitchen is up to you and your server.
-- **Charge anything.** Rumizi's diner flow doesn't take payments.
-- **See other tables.** Each assistant session is scoped to the venue
-  you're at and the cart on your phone.
+Tap **Clear chat** to wipe the conversation history on your phone.
 
 ## A word on accuracy
 
@@ -87,7 +81,7 @@ ask twice than end up with something you can't eat.
   <Card title="Scan and browse" icon="qrcode" href="/diners/scan-and-browse">
     The basics of using a Rumizi menu.
   </Card>
-  <Card title="Order together" icon="users" href="/diners/order-together">
-    Share the cart with your whole table.
+  <Card title="Languages" icon="globe" href="/diners/languages">
+    The assistant answers in your language.
   </Card>
 </Columns>
