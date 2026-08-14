@@ -20,8 +20,22 @@ A shared **Reference** tab holds the glossary and status page.
 ## Commands
 
 - `mint dev` — local preview at `http://localhost:3000`.
-- `mint broken-links` — check internal links before a PR.
+- `mint broken-links` — check internal links before pushing.
 - `mint a11y` — accessibility check.
+
+## Git workflow
+
+- Work on **main**. Commit and push directly with
+  `git push -u origin main`.
+- Do **not** open pull requests for this repo, and do not create feature
+  branches for routine documentation updates.
+- Run `mint broken-links` before pushing — there is no PR check to catch
+  a bad link after the fact.
+
+<!-- This applies to this repo only. The `rumizi` repo keeps its own
+     policy: feature branch, pull request into main, and no direct push
+     to main without the phrase `emergency push`. -->
+
 
 ## Writing style
 
