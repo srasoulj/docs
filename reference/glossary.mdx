@@ -14,7 +14,9 @@ while using a Rumizi menu.
 | --- | --- |
 | **Venue** | A restaurant, café, or bar running on Rumizi. One venue = one workspace. |
 | **Workspace** | The vendor side of Rumizi — where owners and staff edit their menu and settings. Lives at `rumizi.com/your-venue/w`. |
-| **Public menu** | The diner-facing menu at `rumizi.com/your-venue`. What people scan into. |
+| **Venue page** | What a QR scan opens: `rumizi.com/your-venue`. At most venues this is the chat home. |
+| **Chat home** | The assistant-first screen a diner lands on after scanning. The browsable menu is one tap away. |
+| **Public menu** | The browsable, diner-facing menu at `rumizi.com/your-venue/menu`. |
 | **QR code** | The scannable code on the table that opens the public menu. |
 | **Menu** | A collection of categories and items (for example *Lunch*, *Dinner*, *Drinks*). A venue can have more than one. |
 | **Category** | A section of a menu: *Starters*, *Mains*, *Desserts*. |
@@ -32,7 +34,9 @@ while using a Rumizi menu.
 | **Menu assistant** | The in-menu AI diners chat with. Advises only — never places an order. |
 | **Guided discovery** | The one-question-at-a-time wizard that narrows a diner to 3–4 recommended dishes. |
 | **Taste memory** | Per-venue store of tastes the diner has told the assistant ("I don't like cilantro"). Scoped to a single venue. |
-| **Welcome card** | The first-visit intro card that asks a few quick questions before the menu opens. |
+| **Onboarding** | The four quick questions on a diner's first visit: first time or returning, where they're visiting from, which country, which language. Skippable. |
+| **Question chips** | The ready-made questions on a dish ("What's in it?", "Contains nuts?") that send straight to the assistant. |
+| **Not for me** | A diner's mark on a dish they don't want suggested. Scoped to the venue or to everywhere, at their choice. Anonymous to the vendor. |
 
 ## Publishing
 
@@ -42,7 +46,7 @@ while using a Rumizi menu.
 | **Published copy / snapshot** | The frozen version of the menu diners actually see. Created when you tap **Publish**. |
 | **Publish** | The action that takes the current working copy and makes it the live menu. |
 | **Revert last publish** | Roll back to the previous published snapshot. |
-| **Preview** | Viewing the working copy on the public URL without publishing. Appends `?menu=<menu-id>` while signed in. |
+| **Preview** | Viewing the working copy without publishing: `rumizi.com/your-venue/menu?menu=<menu-id>` while signed in as owner or staff. |
 
 ## Availability
 
@@ -80,12 +84,17 @@ while using a Rumizi menu.
 | **Staff** | Day-to-day role on a venue. Can edit menus, change stock, run schedules. Can't manage billing or other staff. |
 | **Customer account** | An optional diner account scoped to a single venue (for posting in that venue's community). |
 | **Magic link** | A one-time sign-in link Rumizi emails to vendors instead of using passwords. |
+| **One-time code** | The six-digit alternative to a magic link, sent by email or SMS. |
+| **Team** | Where owners invite and manage staff, at `rumizi.com/your-venue/w/team`. |
+| **Hub** | The vendor workspace home — 7-day stats and least-loved dishes. |
 
 ## Billing
 
 | Term | Meaning |
 | --- | --- |
-| **Trial** | The free window at the start of a venue's life. Everything works; no card required. |
-| **Active** | The venue has a valid subscription (or a super-admin manual mark). |
-| **Grace period** | Short window after the trial ends before the public menu is paused. |
+| **Always Free** | The $0 plan: 1 menu, 5 categories, 50 items, no AI features. |
+| **Pro AI** | $99/month or $990/year. Unlimited content, all AI features, $50 of AI usage per period. |
+| **Max AI** | $249/month or $2,490/year. Same as Pro with $150 of AI usage per period. |
+| **Trial** | 30 days of Pro AI at the start of a venue's life. No card required. |
+| **AI spend cap** | The per-period AI budget on a paid plan. Past it, text AI moves to a cheaper model and image generation pauses until the period resets. |
 | **Stripe** | The billing provider Rumizi uses for card payments. |

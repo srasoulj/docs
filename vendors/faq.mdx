@@ -26,8 +26,17 @@ Quick answers to the questions I hear most. If yours isn't here, email
     install. You print the QR once and put it on tables.
   </Accordion>
   <Accordion title="Can I use my own domain?">
-    Today, every venue lives at `rumizi.com/your-venue`. Custom domains
-    are on the roadmap.
+    Not yet — custom domains like `menu.yourvenue.com` are on the
+    roadmap. You do get two Rumizi addresses today, though:
+    `rumizi.com/your-venue` and `your-venue.rumizi.com`. Both work; the
+    subdomain redirects to the path version, which is the canonical one
+    to print on a QR code.
+  </Accordion>
+  <Accordion title="What do diners see first — the menu or the chat?">
+    The chat, at most venues. Your public link opens the AI assistant
+    with the full menu one tap away in the header. If you'd rather it
+    opened the menu directly, email me and I'll switch the chat off for
+    your venue.
   </Accordion>
 </AccordionGroup>
 
@@ -50,9 +59,11 @@ Quick answers to the questions I hear most. If yours isn't here, email
     snapshot is restored and diners see it on the next page load.
   </Accordion>
   <Accordion title="Can I preview changes before publishing?">
-    Yes. Open your public URL and add `?menu=<menu-id>` — as a signed-in
-    owner or staff member, you'll see the working copy instead of the
-    published copy. Details: [Publish and preview](/vendors/menu/publish).
+    Yes. Open `rumizi.com/your-venue/menu?menu=<menu-id>` — as a
+    signed-in owner or staff member, you'll see the working copy instead
+    of the published one. Signed out, the same link shows the published
+    copy, so it's safe to share. Details:
+    [Publish and preview](/vendors/menu/publish).
   </Accordion>
   <Accordion title="How do I mark an item out of stock?">
     Open the item, pick a mode: *indefinite*, *until tomorrow*, or
@@ -82,9 +93,22 @@ Quick answers to the questions I hear most. If yours isn't here, email
     places an order. Details:
     [Menu assistant for diners](/diners/menu-assistant).
   </Accordion>
+  <Accordion title="Which AI features need a paid plan?">
+    The diner-facing menu assistant, the workspace Rumizi Assistant, and
+    AI image generation all need **Pro AI** or **Max AI**. AI menu
+    extraction — reading a photo or PDF into a draft menu — works on
+    every plan, including Always Free.
+  </Accordion>
   <Accordion title="I don't want AI at all. Can I turn it off?">
     Yes. Email [hi@rumizi.com](mailto:hi@rumizi.com) and I'll disable
-    the assistant for your venue. Manual editing works identically.
+    the assistant for your venue even on a paid plan. Manual editing
+    works identically.
+  </Accordion>
+  <Accordion title="Do diners see what I write in the assistant context?">
+    Only the **item**-level notes. Venue, menu, and category context is
+    read by the AI but never shown. Item context also renders on the
+    item card and detail page, so write it for a guest to read. Details:
+    [Edit your menu](/vendors/menu/editing#briefing-the-diner-assistant).
   </Accordion>
 </AccordionGroup>
 
@@ -106,12 +130,27 @@ Quick answers to the questions I hear most. If yours isn't here, email
 
 <AccordionGroup>
   <Accordion title="How much does Rumizi cost?">
-    $35/month or $350/year, both in USD. See
-    [Subscription and billing](/vendors/billing/subscription).
+    There's a free plan, and two paid ones: **Pro AI** at $99/month or
+    $990/year, and **Max AI** at $249/month or $2,490/year, all in USD.
+    See [Plans and billing](/vendors/billing/subscription).
+  </Accordion>
+  <Accordion title="What's actually free?">
+    **Always Free** gives you one menu with up to 5 categories and 50
+    items, uploaded and read by AI extraction like any other plan,
+    published and scannable. What it doesn't include is the AI: no menu
+    assistant for your diners, no AI image generation, no workspace
+    copilot.
   </Accordion>
   <Accordion title="What happens when my trial ends?">
-    You get a short grace period before your public menu is paused. If
-    you subscribe during either window, nothing changes for diners.
+    Your venue moves to **Always Free**. It is *not* blocked and your
+    menu stays live — you lose the AI features and go back inside the
+    free limits. Subscribe at any point and everything comes straight
+    back; nothing is deleted in the meantime.
+  </Accordion>
+  <Accordion title="I'm over 50 items and dropped to Free. What happens?">
+    Your items stay in the workspace and diners keep seeing the last
+    version you published — but you can't publish again until you're
+    under 50 items or back on a paid plan.
   </Accordion>
   <Accordion title="How do I cancel?">
     Email [hi@rumizi.com](mailto:hi@rumizi.com). I'll cancel and confirm
@@ -127,15 +166,24 @@ Quick answers to the questions I hear most. If yours isn't here, email
 
 <AccordionGroup>
   <Accordion title="How do I invite staff?">
-    From your workspace, open **Settings → Staff** and invite by email.
-    Staff get a magic-link sign-in — no password to share.
+    From your workspace, open **More → Staff** and invite them. They sign
+    in passwordlessly like you do — no password to share.
   </Accordion>
   <Accordion title="What can staff do?">
     Staff can edit menus, mark items out of stock, and manage open hours.
-    Billing, staff management, and venue slug changes stay owner-only.
+    Billing, staff management, venue settings, and slug changes stay
+    owner-only.
+  </Accordion>
+  <Accordion title="How do I sign in?">
+    Go to `rumizi.com/login` and give an email address or phone number.
+    You'll get a one-time code to type in; by email you also get a magic
+    link you can tap instead. **Google** and **Apple** work too. If your
+    account manages more than one venue, you pick which one after signing
+    in.
   </Accordion>
   <Accordion title="I lost my sign-in link.">
-    Request a new one from the login page. Each link is one-time use.
+    Request a new one from the login page. Each link and code is
+    one-time use.
   </Accordion>
 </AccordionGroup>
 

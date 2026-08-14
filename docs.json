@@ -35,6 +35,13 @@
             ]
           },
           {
+            "group": "Your workspace",
+            "pages": [
+              "vendors/workspace/hub",
+              "vendors/workspace/tools"
+            ]
+          },
+          {
             "group": "Media",
             "pages": [
               "vendors/media/gallery",
@@ -97,6 +104,8 @@
             "group": "Reference",
             "pages": [
               "reference/glossary",
+              "reference/catalogs",
+              "reference/restaurants-directory",
               "reference/status"
             ]
           }

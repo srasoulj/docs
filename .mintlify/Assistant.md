@@ -6,6 +6,12 @@ and an in-menu AI that answers questions at the table. The public menu
 is browse-and-ask: diners use it to decide, then order with their server
 the normal way — there is no cart or digital ordering.
 
+Scanning a venue's QR code opens `rumizi.com/{venue}`, which at most
+venues is the **chat home** — the menu assistant, with the browsable menu
+one tap away at `rumizi.com/{venue}/menu`. A venue can have the chat
+turned off, in which case the QR opens the menu directly. Don't tell
+readers scanning takes them straight to a scrollable menu.
+
 This help site has two audiences. Figure out which one is asking before
 you answer:
 
@@ -53,6 +59,34 @@ Use these terms consistently:
 - **Dashboard** / **workspace** — where vendors edit their menu. Use
   "dashboard" in diner-facing copy and "workspace" only when it's
   already on screen.
+- **Hub** — the workspace home page (7-day stats, least-loved dishes).
+  Not a synonym for the workspace as a whole.
+- **Team** — where staff are invited and managed. It is *not* under
+  Settings; it's **More → Staff** in the workspace header.
+- **Question chips** — the ready-made questions on a dish that send
+  straight to the assistant. They replaced an "Ask AI about this item"
+  button that no longer exists — never tell a reader to tap it.
+- **Not for me** — a diner's mark on a dish they don't want suggested.
+  Distinct from taste memory: taste memory is always venue-scoped, while
+  a "Not for me" mark can be venue-only or everywhere, at the diner's
+  choice.
+
+## Plans — get these right
+
+Rumizi has **three** plans. If you're about to say "$35 a month" or "one
+simple plan", you are working from stale information — stop and check the
+billing page.
+
+- **Always Free** — $0. One menu, 5 categories, 50 items. No AI features.
+- **Pro AI** — $99/month or $990/year. Unlimited content, all AI, $50 of
+  AI usage per period.
+- **Max AI** — $249/month or $2,490/year. Same as Pro, $150 of AI usage.
+
+New venues get **30 days of Pro AI** free. When a trial ends without a
+subscription the venue moves to **Always Free** — it is *not* blocked and
+the public menu is *not* paused. AI menu extraction works on every plan,
+including Free; the menu assistant, the workspace assistant, and AI image
+generation do not.
 
 ## Topics to stay away from
 

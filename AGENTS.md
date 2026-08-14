@@ -15,7 +15,28 @@ Two audiences, two tabs:
 - **For vendors** — restaurant owners and staff editing menus.
 - **For diners** — people scanning a Rumizi QR code at a table.
 
-A shared **Reference** tab holds the glossary and status page.
+A shared **Reference** tab holds the glossary, Rumizi's other public
+surfaces (the drinks and steaks catalogs, the restaurants directory), and
+the status page.
+
+## Facts worth double-checking before you write
+
+These have drifted before. Verify against the `rumizi` repo rather than
+memory:
+
+- **Plans.** Three of them — Always Free ($0), Pro AI ($99/mo · $990/yr),
+  Max AI ($249/mo · $2,490/yr). 30-day Pro trial; expiry drops a venue to
+  Free, it does not block the menu. Source: `src/lib/vendor-plan.ts`.
+- **The diner entry point.** `rumizi.com/{venue}` is the chat home; the
+  browsable menu is `rumizi.com/{venue}/menu`. Source:
+  `src/lib/vendor-site-paths.ts`.
+- **Menu editor tabs.** Items, Categories, Modifiers, Tags, Cross-sell,
+  Translations, Schedule, Basics — the last two conditional. Source:
+  `src/app/[brandSlug]/staff/menu-editor-tabs.ts`.
+- **Workspace navigation.** Hub, Menu, Settings, and a More menu holding
+  Staff (`/w/team`), Gallery, Tools, Billing.
+- **Tags are labels, not filters.** There is no tag filter bar on the
+  public menu.
 
 ## Commands
 
@@ -32,10 +53,9 @@ A shared **Reference** tab holds the glossary and status page.
 - Run `mint broken-links` before pushing — there is no PR check to catch
   a bad link after the fact.
 
-<!-- This applies to this repo only. The `rumizi` repo keeps its own
-     policy: feature branch, pull request into main, and no direct push
-     to main without the phrase `emergency push`. -->
-
+This applies to **this repo only**. The `rumizi` repo keeps its own policy:
+feature branch, pull request into main, and no direct push to main without
+the phrase `emergency push`.
 
 ## Writing style
 
