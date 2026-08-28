@@ -1,87 +1,170 @@
 ---
-title: "Subscription and billing"
-description: "Rumizi subscription plans, how to upgrade, and what happens when a trial ends."
-sidebarTitle: "Subscription"
+title: "Plans and billing"
+description: "Rumizi's three plans, what each one includes, how the free trial works, and what happens when it ends."
+sidebarTitle: "Plans and billing"
 icon: "credit-card"
 ---
 
-Rumizi runs on one simple plan with a choice of billing cadence. No tiers,
-no feature unlocks — everything you see in your workspace is part of the
-plan.
+Rumizi has three plans. One is free forever and gets you a working digital
+menu. The two paid ones lift every content limit and turn on the AI features —
+the menu assistant your diners talk to, the Rumizi Assistant in your
+workspace, and AI image generation.
 
-## The plan
+AI menu extraction is **not** one of them: reading a photo or PDF into a
+draft menu works on every plan, including Free.
 
-<Columns cols={2}>
-  <Card title="Monthly" icon="calendar">
-    **$35 / month**, billed in USD. Cancel any time; you keep the plan
-    until the end of the current period.
+## The plans
+
+<Columns cols={3}>
+  <Card title="Always Free" icon="gift">
+    **\$0**
+
+    One menu, up to 5 categories in it, up to 50 items total. No AI
+    features.
   </Card>
-  <Card title="Yearly" icon="calendar-days">
-    **$350 / year**, billed in USD. Two months free compared with the
-    monthly plan.
+  <Card title="Pro AI" icon="sparkles">
+    **\$99 / month** or **\$990 / year**
+
+    Unlimited menus, categories, and items. All AI features, with \$50 of
+    AI usage per billing period.
+  </Card>
+  <Card title="Max AI" icon="rocket">
+    **\$249 / month** or **\$2,490 / year**
+
+    Everything in Pro, with \$150 of AI usage per billing period. For busy
+    venues whose diners ask a lot.
   </Card>
 </Columns>
+
+## What each plan includes
+
+| | Always Free | Pro AI | Max AI |
+| --- | --- | --- | --- |
+| Price (monthly) | \$0 | \$99 | \$249 |
+| Price (yearly) | — | \$990 | \$2,490 |
+| Menus | 1 | Unlimited | Unlimited |
+| Categories per menu | 5 | Unlimited | Unlimited |
+| Items in total | 50 | Unlimited | Unlimited |
+| Menu assistant for diners | — | Yes | Yes |
+| AI image generation | — | Yes | Yes |
+| AI usage per period | — | \$50 | \$150 |
+
+Everything that isn't AI works on every plan: uploading and extracting a menu,
+editing it, publishing, translations, open hours, tags, cross-sell,
+availability, the gallery, brand images, the QR code, and staff accounts.
+
+<Note>
+Yearly billing is two months free on both paid plans.
+</Note>
+
+## Your first 30 days
+
+New venues start on **30 days of Pro AI**, free and without a card. You get
+the full product — unlimited content and every AI feature — while you decide
+whether Rumizi is right for you.
+
+<Steps>
+  <Step title="Sign up">
+    Your venue is created on Pro AI for 30 days.
+  </Step>
+  <Step title="Build and publish">
+    Upload your menu, edit it, publish it, put the QR code on the tables.
+    Nothing is gated during the trial.
+  </Step>
+  <Step title="Subscribe before day 30">
+    Open **Billing** and pick Pro or Max. Nothing changes for your diners.
+  </Step>
+</Steps>
+
+### What happens if you don't subscribe
+
+When the trial ends without a subscription, your venue moves to **Always
+Free**. It is not blocked and your menu is not taken down — your public menu
+stays live and scannable.
+
+What you lose is the AI and the headroom:
+
+- The **menu assistant stops answering** your diners — it replies that the
+  feature isn't available on your plan instead of recommending dishes. If
+  you're staying on Free, email me and I'll turn the chat off for your venue
+  so your link opens the menu directly.
+- **AI image generation** and the workspace **Rumizi Assistant** switch off.
+- You're back inside the Free limits: 1 menu, 5 categories, 50 items.
+
+Uploading a menu file and extracting it with AI keeps working.
+
+<Warning>
+If your menu is over 50 items when you drop to Free, the items stay in your
+workspace but you can't **publish** until you're back under the limit or on a
+paid plan. Diners keep seeing the last version you published.
+</Warning>
+
+Subscribing at any point restores everything immediately — nothing is deleted
+while you're on Free.
 
 ## Subscribe
 
 <Steps>
   <Step title="Open Billing">
-    In the workspace, go to **Billing**. Direct URL:
-    `rumizi.com/your-venue/w/billing`.
+    In your workspace, open **More → Billing**. Direct URL:
+    `rumizi.com/your-venue/w/billing`. Billing is owner-only — staff accounts
+    don't see it.
   </Step>
-  <Step title="Pick a cadence">
-    Tap **Monthly** or **Yearly**. You're redirected to Stripe's secure
-    checkout page.
+  <Step title="Pick a plan and a cadence">
+    Choose **Pro AI** or **Max AI**, then monthly or yearly. You're
+    redirected to Stripe's secure checkout.
   </Step>
   <Step title="Pay">
-    Fill in your card details on Stripe. Rumizi never sees your card
-    number.
+    Fill in your card details on Stripe. Rumizi never sees your card number.
   </Step>
   <Step title="You're active">
-    After a successful payment, Stripe sends a confirmation back to
-    Rumizi and your venue is marked active. You can go back to your
-    workspace.
+    Stripe confirms back to Rumizi and your plan switches over. Head back to
+    your workspace.
   </Step>
 </Steps>
 
-## Trials and grace periods
+You can move between Pro and Max the same way — open Billing and pick the
+other plan.
 
-New venues start on a **trial**. You get the full workspace and a live
-public menu during the trial — nothing is gated behind a subscription
-during this window.
+## AI usage and the spend cap
 
-When the trial ends, your venue moves to a short **grace period** before
-it's blocked. If you subscribe during either window, no interruption for
-your diners.
+Paid plans include a budget of AI usage per billing period: **\$50 on Pro**,
+**\$150 on Max**. The Billing page shows a bar with how much of it you've used
+and when it resets.
 
-<Note>
-If I ever have to block a venue for billing, the public menu is paused —
-diners see a "Temporarily unavailable" page, not a broken link. The
-moment you subscribe, it comes back.
-</Note>
+Almost no venue reaches it. It exists so that a venue that gets an unusual
+amount of chat traffic doesn't generate an unbounded bill. If you do hit the
+cap:
+
+- **Text AI keeps working** on a smaller, cheaper model, so your diners still
+  get answers.
+- **AI image generation pauses** until the period resets.
+
+Upgrading from Pro to Max raises the cap straight away.
+
+## Cancelling and card changes
+
+Two things aren't in the app yet:
+
+- **Cancelling** — email [hi@rumizi.com](mailto:hi@rumizi.com) and I'll cancel
+  it for you and confirm.
+- **Changing your card** — same, email me.
+
+Billing is **USD only**. That's separate from your menu prices, which you can
+set in any currency — see [Menu theme](/vendors/venue/theme).
 
 ## 100% satisfaction
 
 If Rumizi doesn't work for you in the first month, email
 [hi@rumizi.com](mailto:hi@rumizi.com) and I'll sort it out personally.
 
-## What's not in v1
-
-A few billing features aren't in this version yet:
-
-- **In-app cancel** — to cancel, email
-  [hi@rumizi.com](mailto:hi@rumizi.com) and I'll cancel for you.
-- **Change card in-app** — same: email me.
-- **Multi-currency billing** — today's plan is USD only. Menu prices are
-  independent — your menu can be priced in any currency.
-
 ## Related
 
 <Columns cols={2}>
-  <Card title="Overview" icon="store" href="/vendors/index">
-    Back to the vendor docs.
+  <Card title="Rumizi Assistant" icon="wand-sparkles" href="/vendors/assistant/overview">
+    The workspace copilot, included on Pro and Max.
   </Card>
-  <Card title="FAQ" icon="question" href="/vendors/faq">
+  <Card title="FAQ" icon="circle-question-mark" href="/vendors/faq">
     Common billing questions answered.
   </Card>
 </Columns>

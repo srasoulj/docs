@@ -1,0 +1,78 @@
+---
+title: "Your Hub"
+description: "The workspace home: a 7-day snapshot of how your menu is doing, and which dishes diners are quietly turning down."
+sidebarTitle: "Hub"
+icon: "layout-dashboard"
+---
+
+The Hub is what opens when you sign in. It's a short read, not a dashboard
+you have to study — your venue at the top, a couple of numbers, and the one
+list worth acting on.
+
+Direct URL: `rumizi.com/your-venue/w/hub`.
+
+## Your venue, up top
+
+Your logo (or hero image, if you haven't set a logo) and venue name sit at
+the top of the page. If that space looks empty, you haven't uploaded
+either — see [Brand images](/vendors/venue/brand).
+
+## The 7-day snapshot
+
+Two cards, each showing the last seven days with the week-over-week change
+underneath. When there isn't enough history to compare, you'll see **"Not
+enough data yet"** rather than a misleading percentage.
+
+<Columns cols={2}>
+  <Card title="Questions answered by AI" icon="message-circle">
+    How many times the menu assistant answered a diner at your venue.
+    This is the honest measure of whether the chat is earning its keep.
+  </Card>
+  <Card title="Menu views" icon="eye">
+    How many times your menu was opened, with today's count underneath.
+  </Card>
+</Columns>
+
+<Note>
+**Menu views currently reads 0.** The per-day counting behind it isn't
+wired up yet, so treat the card as a placeholder until it starts moving.
+The AI answers card is live and accurate.
+</Note>
+
+## Least loved dishes
+
+Diners can mark a dish **Not for me** while browsing (see
+[Scan and browse](/diners/scan-and-browse#not-for-me)). The Hub collects
+those marks and shows the dishes with the most, along with the reasons
+diners picked — *"too expensive"*, *"don't like the ingredients"*, and so
+on — or **"No reasons given"** when they skipped that step.
+
+This is the closest thing Rumizi gives you to the feedback a diner would
+never say to your face.
+
+<Warning>
+Small counts are noisy. Three marks on a dish is a hint, not a verdict —
+it might be one table having an off night. Wait for a pattern before you
+change a recipe or pull a dish.
+</Warning>
+
+The card only appears when there's something in it. No marks, no card.
+It's fully anonymous — you see what was marked and why, never who marked
+it.
+
+<Tip>
+A dish collecting marks isn't always a bad dish. Check the reasons first:
+"too expensive" is a pricing decision, "not what I expected" is usually a
+description or photo problem, and both are cheaper to fix than the recipe.
+</Tip>
+
+## Related
+
+<Columns cols={2}>
+  <Card title="Edit your menu" icon="pencil" href="/vendors/menu/editing">
+    Act on what the Hub tells you.
+  </Card>
+  <Card title="Tools" icon="wrench" href="/vendors/workspace/tools">
+    The website widget and the gallery bookmarklet.
+  </Card>
+</Columns>

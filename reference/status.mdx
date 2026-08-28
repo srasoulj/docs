@@ -2,7 +2,7 @@
 title: "Status and support"
 description: "How to check whether Rumizi is up, and how to reach me when something isn't working."
 sidebarTitle: "Status and support"
-icon: "life-ring"
+icon: "life-buoy"
 ---
 
 If your menu isn't loading or your workspace is behaving oddly, here's
@@ -12,9 +12,9 @@ how to check and how to get help fast.
 
 <Steps>
   <Step title="Open your public URL on a fresh browser tab">
-    Go to `rumizi.com/your-venue` with no filters or query parameters.
-    If it loads normally, the issue is probably local to your device or
-    cache, not Rumizi-wide.
+    Go to `rumizi.com/your-venue` with no query parameters, and then
+    `rumizi.com/your-venue/menu`. If both load normally, the issue is
+    probably local to your device or cache, not Rumizi-wide.
   </Step>
   <Step title="Try a different device">
     If your phone and laptop both fail, the issue is upstream.
@@ -28,11 +28,11 @@ how to check and how to get help fast.
 ## Get in touch
 
 <Columns cols={2}>
-  <Card title="Email" icon="envelope" href="mailto:hi@rumizi.com">
+  <Card title="Email" icon="mail" href="mailto:hi@rumizi.com">
     [hi@rumizi.com](mailto:hi@rumizi.com) — I read every email myself
     and usually reply within a few hours.
   </Card>
-  <Card title="In-app chat (vendors)" icon="comments">
+  <Card title="In-app chat (vendors)" icon="messages-square">
     If you can reach your vendor workspace, tap the live chat button in
     the header to open a conversation.
   </Card>
@@ -54,8 +54,15 @@ The more of those I have, the faster I can fix it.
 A few things are on the roadmap but not in the product yet:
 
 - In-app subscription cancellation and card updates.
-- Custom domains (`menu.yourvenue.com`).
-- Multi-currency billing.
+- Custom domains (`menu.yourvenue.com`). Your venue does already have a
+  Rumizi subdomain — `your-venue.rumizi.com` — which redirects to
+  `rumizi.com/your-venue`.
+- Multi-currency billing (menu prices can be any currency; the
+  subscription itself is USD).
+- Tag filters on the public menu. Tags show on dishes today, but diners
+  narrow the menu with search or by asking the assistant.
+- Menu view counts on your Hub — the card is there but reads 0 until the
+  counting behind it is finished.
 - A dedicated diner app — for now, the browser experience is the whole
   product for diners.
 

@@ -2,7 +2,7 @@
 title: "Diner FAQ"
 description: "Common questions from people using a Rumizi QR menu at a restaurant."
 sidebarTitle: "FAQ"
-icon: "circle-question"
+icon: "circle-question-mark"
 ---
 
 Quick answers for diners. If something isn't covered, ask your server —
@@ -16,24 +16,29 @@ they have direct support from Rumizi.
     There's nothing to install.
   </Accordion>
   <Accordion title="Do I need an account?">
-    No. Scanning, browsing, adding to cart, and ordering together all
-    work without signing in. Some venues offer an optional account for
-    community features — see [Accounts](/diners/accounts).
+    No. Browsing the menu and talking to the assistant both work without
+    signing in. Some venues offer an optional account for community
+    features — see [Accounts](/diners/accounts).
   </Accordion>
   <Accordion title="Is there a cost?">
     No. Rumizi is free for diners. The restaurant pays for its own
     menu; you just use it.
   </Accordion>
   <Accordion title="Does it work offline?">
-    You need an internet connection to load the menu the first time.
-    After that, most things keep working on a spotty connection because
-    your cart is stored on your phone.
+    You need an internet connection to load the menu and to chat with
+    the assistant. Once a page is loaded it stays readable, but new
+    questions and searches need the connection to be back.
   </Accordion>
 </AccordionGroup>
 
 ## Using the menu
 
 <AccordionGroup>
+  <Accordion title="How do I actually place an order?">
+    You order with your server the way you normally would. Rumizi is
+    browse-and-ask — it helps you decide what to get, then the
+    hand-off is human. There's no cart and no "send order" button.
+  </Accordion>
   <Accordion title="How do I change the language?">
     Tap the language button in the header. You'll see every language
     the venue supports. Details: [Switching language](/diners/languages).
@@ -42,31 +47,32 @@ they have direct support from Rumizi.
     Tap the theme toggle in the header (sun / moon icon). Your choice
     is remembered on your phone for that venue.
   </Accordion>
-  <Accordion title="An item looks dimmed and I can't add it.">
+  <Accordion title="An item looks dimmed.">
     It's marked out of stock by the venue. The item is still shown so
-    you know what it normally is, but you can't add it to your cart
+    you know what it normally is; the kitchen just doesn't have it
     right now.
   </Accordion>
-  <Accordion title="Does the cart actually send my order to the kitchen?">
-    It depends on the venue. Some Rumizi venues use the cart as a live
-    order; others use it as a list you show your server. Ask your
-    server if you're not sure.
+  <Accordion title="What are those two illustrations on ingredient popups?">
+    When you tap an ingredient on the item detail page, Rumizi shows a
+    short explanation and two AI-drawn illustrations of what the
+    ingredient looks like. Useful for words like "burrata", "guanciale",
+    or "sumac" if you're not sure what they are.
   </Accordion>
-</AccordionGroup>
-
-## Order together
-
-<AccordionGroup>
-  <Accordion title="How do I start a group cart?">
-    Tap **Order together** in the menu header, then share the link or
-    QR code that appears. Details: [Order together](/diners/order-together).
+  <Accordion title="Why did it open a chat instead of the menu?">
+    At most venues the chat is the front door — it knows the menu and
+    can answer faster than scrolling. The full browsable menu is one tap
+    away in the header, or at `rumizi.com/venue-name/menu`.
   </Accordion>
-  <Accordion title="Can I leave a group cart?">
-    Yes. Tap **Leave group** in the header or in the cart dialog. You're
-    removed; everyone else's items stay untouched.
+  <Accordion title="Can I filter to just the vegetarian dishes?">
+    Not with a filter button — tags like *Vegetarian* are labels on the
+    dishes, not filters. Use the search box, or just ask the assistant
+    "which of these are vegetarian?" and it'll list them.
   </Accordion>
-  <Accordion title="How long does a group last?">
-    About seven days, then the link expires and the cart is cleaned up.
+  <Accordion title="What does Not for me do?">
+    It tells Rumizi to show you fewer dishes like that one — it drops
+    out of the Popular row and the assistant stops suggesting it. You
+    choose whether it applies just at that restaurant or everywhere. The
+    venue sees anonymous counts, never who marked what.
   </Accordion>
 </AccordionGroup>
 
@@ -82,12 +88,18 @@ they have direct support from Rumizi.
     The assistant reads the venue's own allergen info, which is usually
     right, but a human server is the safest final check.
   </Accordion>
-  <Accordion title="Will it add things to my cart automatically?">
-    No. Every cart change needs a final **Apply** tap from you — the
-    assistant drafts the change, you confirm it.
+  <Accordion title="Can the assistant order for me?">
+    No. The assistant helps you decide — it doesn't send anything to
+    the kitchen. You order with your server the normal way.
+  </Accordion>
+  <Accordion title="Does it remember what I like?">
+    Within the same venue, yes. When you tell it something like "I
+    don't like mushrooms" it remembers, and shows a small **Noted · Undo**
+    row so you can drop the memory if it got it wrong. Your tastes are
+    scoped to this one venue and don't follow you around.
   </Accordion>
   <Accordion title="How do I clear the chat?">
-    Tap **Clear chat** in the assistant panel. Your cart is unaffected.
+    Tap **Clear chat** in the assistant panel.
   </Accordion>
 </AccordionGroup>
 
@@ -95,13 +107,9 @@ they have direct support from Rumizi.
 
 <AccordionGroup>
   <Accordion title="Does Rumizi track me?">
-    Rumizi stores what you need to use the menu — your cart, your
-    language choice, your theme, and (if you sign in) your account at a
-    venue. It doesn't sell or share that data.
-  </Accordion>
-  <Accordion title="Who sees what I add to a group cart?">
-    Only other members of that same group cart. Not the venue next door,
-    not Rumizi, not anyone else.
+    Rumizi stores what you need to use the menu — your language choice,
+    your theme, the tastes you've told the assistant, and (if you sign
+    in) your account at a venue. It doesn't sell or share that data.
   </Accordion>
 </AccordionGroup>
 

@@ -35,26 +35,36 @@ Open it from **Menus** in the workspace and pick the menu you want to edit.
     Build reusable option groups — *Size: S/M/L*, *Spice level*, *Milk
     choice*. Attach a group to any item or category.
   </Tab>
+  <Tab title="Tags">
+    Create and manage the labels you put on dishes — *Vegetarian*,
+    *Spicy*, *Chef's pick* — including colours, icons, and the platform
+    presets you've adopted. See [Tags](/vendors/menu/tags).
+  </Tab>
   <Tab title="Cross-sell">
     Suggest complementary items on the item detail page. For example,
     pair *Margherita pizza* with *Sparkling water*. Pairs are
     directional, so you can suggest the drink from the pizza without
     suggesting the pizza from the drink.
   </Tab>
-  <Tab title="Schedule">
-    Set the hours this menu is available. See
-    [Open hours](/vendors/menu/scheduling).
-  </Tab>
   <Tab title="Translations">
     Add translated names and descriptions for each language you support.
     See [Translations](/vendors/menu/translations).
   </Tab>
+  <Tab title="Schedule">
+    Set the hours this menu is available. See
+    [Open hours](/vendors/menu/scheduling).
+  </Tab>
   <Tab title="Basics">
-    Menu name, description, visual theme, currency, and the AI
-    assistant context for this menu. See
-    [Venue theme](/vendors/venue/theme).
+    Menu name, description, visual theme, currency, and the assistant
+    context for this menu. See [Menu theme](/vendors/venue/theme).
   </Tab>
 </Tabs>
+
+<Note>
+**Translations** only appears once you've added a second language in
+**Settings**, and **Schedule** only once open hours are switched on for the
+venue. Everything else is always there.
+</Note>
 
 ## Saving works across tabs
 
@@ -99,6 +109,25 @@ Items with photos convert better. You can:
   [AI images](/vendors/media/ai-images).
 - Improve an existing photo with AI (remove clutter, brighten, recompose).
 
+## Briefing the diner assistant
+
+Four places let you write notes for the AI that talks to your diners.
+They stack: the assistant blends whatever it finds at every level.
+
+| Level | Where | Good for |
+| --- | --- | --- |
+| **Venue** | **Settings → AI assistant context (brand)** | House style, common allergens, signature dishes, things to mention or avoid. Applies to every menu. |
+| **Menu** | The **Basics** tab | Anything specific to this menu — *"this is the lunch menu, portions are smaller"*. |
+| **Category** | The category dialog | *"Everything here is cooked to order, allow 20 minutes."* |
+| **Item** | The item dialog on the **Items** tab | *"The chef will do this without cream on request."* |
+
+<Note>
+Venue, menu, and category notes are for the AI only — diners never see the
+text. **Item** context is the exception: it also renders to diners on the
+item card, the item detail page, and the assistant's item dialog. Write it
+as something you'd be happy for a guest to read.
+</Note>
+
 ## Publishing what you edited
 
 <Warning>
@@ -119,7 +148,7 @@ a change looks like from a diner's point of view first, see
   <Card title="Tags and filters" icon="tag" href="/vendors/menu/tags">
     Mark vegetarian, spicy, new, chef's pick.
   </Card>
-  <Card title="Cross-sell" icon="arrows-split-up-and-left" href="/vendors/menu/cross-sell">
+  <Card title="Cross-sell" icon="split" href="/vendors/menu/cross-sell">
     Suggest pairings on item detail.
   </Card>
 </Columns>
