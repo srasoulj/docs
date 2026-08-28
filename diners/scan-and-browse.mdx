@@ -1,8 +1,8 @@
 ---
 title: "Scan and browse"
-description: "Point your camera, open the menu, and pick dishes. No app, no account needed."
+description: "Point your camera, answer a couple of taps, and explore the menu. No app, no account needed."
 sidebarTitle: "Scan and browse"
-icon: "qrcode"
+icon: "qr-code"
 ---
 
 You don't install anything to use a Rumizi menu. If the restaurant has a
@@ -20,7 +20,7 @@ QR code on the table, your phone already has everything it needs.
     top (on iPhone) or as a notification (on Android).
   </Step>
   <Step title="Tap the link">
-    The menu opens in your browser. That's the whole setup.
+    The venue's page opens in your browser. That's the whole setup.
   </Step>
 </Steps>
 
@@ -29,18 +29,70 @@ Can't scan? Ask your server for the venue's Rumizi link. It's just
 `rumizi.com/venue-name`.
 </Tip>
 
+## What opens first: the chat
+
+At most venues, scanning drops you into a **chat** rather than a wall of
+dishes. It's the [menu assistant](/diners/menu-assistant) — it knows the
+menu in front of you, and asking it *"what's good here?"* is usually faster
+than scrolling.
+
+The full browsable menu is always one tap away, from the menu button in the
+header or at `rumizi.com/venue-name/menu` directly.
+
+<Note>
+Some venues turn the chat off. If yours has, scanning takes you straight to
+the browsable menu instead and everything below still applies.
+</Note>
+
+## A couple of quick taps first
+
+The first time you open a venue's chat, it asks a short set of questions so
+it can point you at the right things. Each one is a row of tappable pills:
+
+<Steps>
+  <Step title="Is this your first time with us?">
+    **First time here** or **I've been before**.
+  </Step>
+  <Step title="Where are you visiting from?">
+    **I'm local**, or a region — European, Middle Eastern, South Asian,
+    East Asian, Southeast Asian, Latin American, North American, African.
+  </Step>
+  <Step title="Whereabouts exactly?">
+    A country, when the region you picked has a list. Skipped otherwise.
+  </Step>
+  <Step title="Which language would you like to chat in?">
+    The assistant replies in whatever you pick from here on.
+  </Step>
+</Steps>
+
+Progress dots show where you are ("Step 2 of 4"). You can tap **Back** to
+change an answer, **Skip** a single question, or **Skip — just ask me
+anything** to leave the whole thing and start typing.
+
+<Tip>
+It's asked once. Your answers stay on your phone, and the questions don't
+come back on your next visit to that venue — you get a "welcome back"
+instead.
+</Tip>
+
 ## Find what you want
 
-The menu is organised in categories — *Starters*, *Mains*, *Drinks*, and
-so on. A few things you can do to find dishes faster:
+The browsable menu is organised in categories — *Starters*, *Mains*,
+*Drinks*, and so on. A few things that help:
 
-- **Scroll the Popular row at the top.** Venues pin their best dishes
-  here.
-- **Tap a tag filter** (Vegetarian, Spicy, Gluten-free) to narrow the
-  menu down.
-- **Search.** The search box matches item names and ingredients.
+- **The Popular row at the top.** Venues pin their best dishes here. It
+  shows once there are at least three of them.
+- **Search.** The search box matches item names, descriptions, ingredients,
+  and allergens — so searching *"walnut"* finds the dish whose description
+  mentions walnuts, not just one with it in the title.
+- **Category jump.** Use the category bar to skip to a section.
 - **Switch language** from the header if the default isn't yours. See
   [Languages](/diners/languages).
+- **Switch to dark mode** with the theme toggle in the header.
+
+Tags like *Vegetarian* or *Spicy* appear as small coloured labels on the
+dishes that have them — up to three per card, then a "+2". They're labels,
+not filters; to narrow things down, use search or just ask the assistant.
 
 ## Item detail
 
@@ -49,42 +101,61 @@ Tap any dish to open its detail page. You'll see:
 - A photo (if the venue added one).
 - The full description and price.
 - Any allergen or dietary tags.
-- **Modifiers** — pick a size, spice level, or add-ons.
-- **Goes well with** — the venue's suggestions for what pairs with it.
-- **Add to cart** — the only action you need to keep going.
+- **Tappable ingredients.** Ingredient words inside the description are
+  dotted-underlined — tap one for a short explanation and two AI-drawn
+  pictures of what it actually is. Useful when you're not sure what
+  "burrata", "guanciale", or "sumac" means. When the description doesn't
+  name every ingredient, you get a separate row of ingredient chips
+  instead.
+- **Goes well with** — the venue's own pairing suggestions, grouped by kind
+  so starters, drinks, and desserts are easy to tell apart.
+- **Question chips** — three or four ready-made questions built from that
+  dish: *"What's in it?"*, *"Without garlic?"*, *"Contains nuts?"*, *"What
+  goes with it?"*. Tap one and the answer arrives in the chat.
 
-## Your cart
+## "Not for me"
 
-Adding an item opens a cart indicator at the bottom of the screen. Tap it
-to see everything you've added, change quantities, or remove items.
+If a dish isn't your thing, tap the **Not for me** control on it. Rumizi
+quietly shows you fewer dishes like it — it drops out of the Popular row and
+the assistant stops recommending it.
 
-<Note>
-On most Rumizi venues, the cart is a **draft** — a list of what you
-intend to order. Whether the dish actually goes to the kitchen depends on
-the venue. Some places use Rumizi's cart to take orders at the table
-(your server confirms with you first); others use it as a "build your
-order, then tell your server" tool. Ask your server if you're not sure.
-</Note>
+<Steps>
+  <Step title="Tap Not for me">
+    You'll see *"Got it — we'll quietly show fewer like this"* with an
+    **Undo** if you tapped it by accident.
+  </Step>
+  <Step title="Say how far it goes">
+    **Just at this restaurant**, or **I don't like this anywhere** — which
+    carries the preference to other Rumizi venues too.
+  </Step>
+  <Step title="Say why, if you like">
+    An optional row of reasons. **Skip** is always there.
+  </Step>
+</Steps>
+
+This is anonymous. The venue sees counts of what diners marked, never who
+marked it.
 
 ## Out of stock items
 
 If a dish is dimmed and marked "Unavailable", the kitchen is out.
-Tapping it still shows the detail page so you can see what it is, but
-you can't add it to your cart.
+Tapping it still shows the detail page so you can see what it is.
 
-## Finish up
+## Ordering
 
-When you're happy with your cart, hand your phone to your server or read
-the items out. The venue decides how the final hand-off works — Rumizi's
-cart is there to make it easy for you to remember what you picked.
+Rumizi's menu is **browse-and-ask** — you use it to decide, then order
+with your server the way you normally would. There's no cart, no
+"send order" button, no digital ordering. Once you've picked what you
+want, put the phone down and tell your server (or hold up the item on
+your screen).
 
 ## Related
 
 <Columns cols={2}>
-  <Card title="Order together" icon="users" href="/diners/order-together">
-    Share one cart across the whole table.
-  </Card>
   <Card title="Menu assistant" icon="sparkles" href="/diners/menu-assistant">
-    Ask questions in chat.
+    Ask the in-menu AI for recommendations and answers.
+  </Card>
+  <Card title="Languages" icon="globe" href="/diners/languages">
+    Read the menu in your language.
   </Card>
 </Columns>

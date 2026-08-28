@@ -1,0 +1,116 @@
+---
+title: "Tools"
+description: "Put a Rumizi button on your own website, and capture menus and photos from pages that block automated access."
+sidebarTitle: "Tools"
+icon: "wrench"
+---
+
+Two things live under **More → Tools** in your workspace: a snippet that
+adds a Rumizi button to your own website, and a pair of bookmarklets for
+pulling content off pages Rumizi can't crawl on its own.
+
+Direct URL: `rumizi.com/your-venue/w/tools`.
+
+## Add Rumizi to your website
+
+If you already have a website — WordPress, Squarespace, Shopify, or plain
+HTML — you can drop in a floating button that opens your Rumizi page in a
+new tab. Visitors get to your live menu and the assistant without you
+rebuilding anything.
+
+<Steps>
+  <Step title="Customise the button">
+    Four pickers, with a live preview of a fake website next to them so
+    you can see the result before you touch your site:
+
+    - **Theme** — Terracotta, Cream, or Dark.
+    - **Shape** — Round, Pill, or Square.
+    - **Size** — Small, Medium, or Large.
+    - **Position** — Bottom right or Bottom left.
+
+    On the **Pill** shape you can also set the **button label** — it
+    defaults to *"Chat with us"*. The round and square shapes are
+    icon-only, so the label field is disabled there.
+  </Step>
+  <Step title="Copy the snippet">
+    Copy the `<script>` tag the page generates for you.
+  </Step>
+  <Step title="Paste it into your site">
+    Paste it just before the closing `</body>` tag, on **every page** you
+    want the button to appear on. Most site builders have a "custom code"
+    or "footer scripts" box for exactly this.
+  </Step>
+  <Step title="Done">
+    Reload your site and the button appears in the corner you picked.
+  </Step>
+</Steps>
+
+<Tip>
+Change your mind about the look later? Re-generate the snippet with new
+options and replace the old one. There's nothing stored on Rumizi's side —
+the appearance lives entirely in the snippet.
+</Tip>
+
+## Browser bookmarklets
+
+Some restaurant websites can't be read automatically — they sit behind
+Cloudflare, or build the page with JavaScript after it loads. The
+bookmarklets get around this by running in **your** browser, on a page
+you're already looking at, so the site sees a normal visitor.
+
+There are two:
+
+<Columns cols={2}>
+  <Card title="Capture Menu Content" icon="book-open">
+    Grabs the page's text for menu extraction. Use it on a page showing
+    food and drink items with prices, then run it through
+    [Upload a menu file](/vendors/menu/upload).
+  </Card>
+  <Card title="Capture Gallery Images" icon="image">
+    Finds the photos on a page and imports them into your
+    [gallery](/vendors/media/gallery). Use it on pages with food or
+    venue photography.
+  </Card>
+</Columns>
+
+### Using one
+
+<Steps>
+  <Step title="Drag it to your bookmarks bar">
+    On the Tools page, drag the bookmarklet link up to your browser's
+    bookmarks bar. You only do this once.
+  </Step>
+  <Step title="Go to the page you want">
+    Open the restaurant's own website — the menu page, or a page with the
+    photos you want.
+  </Step>
+  <Step title="Click the bookmarklet">
+    A small popup confirms what was captured.
+  </Step>
+  <Step title="Pick it up in Rumizi">
+    Captured text shows up in your menu uploads; captured images show up
+    in your gallery.
+  </Step>
+</Steps>
+
+<Note>
+The bookmarklets use your existing browser session to know who you are, so
+**stay signed in to Rumizi** in the same browser. If nothing seems to
+happen, that's usually why.
+</Note>
+
+<Warning>
+Only capture from sites you have the right to use — your own website, or
+one you own the photos on. Rumizi doesn't check this for you.
+</Warning>
+
+## Related
+
+<Columns cols={2}>
+  <Card title="Gallery" icon="images" href="/vendors/media/gallery">
+    Where captured images land.
+  </Card>
+  <Card title="Upload a menu file" icon="upload" href="/vendors/menu/upload">
+    Turn captured menu text into a draft menu.
+  </Card>
+</Columns>

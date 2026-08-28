@@ -1,55 +1,55 @@
-# Mintlify Starter Kit
+# Rumizi help center
 
-Use the starter kit to get your docs deployed and ready to customize.
+The public help site for [Rumizi](https://rumizi.com), built on
+[Mintlify](https://mintlify.com) and published at
+[guide.rumizi.com](https://guide.rumizi.com). It's linked from the vendor
+workspace (**More → Guide**) and from the Rumizi site header.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+Two audiences, two tabs:
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+- **For vendors** — restaurant owners and staff who edit and publish menus.
+- **For diners** — people scanning a Rumizi QR code at a table.
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+A shared **Reference** tab holds the glossary, the public Rumizi surfaces
+(drinks and steaks catalogs, restaurants directory), and the status page.
 
-## AI-assisted writing
-
-Set up your AI coding tool to work with Mintlify:
-
-```bash
-npx skills add https://mintlify.com/docs
-```
-
-This command installs Mintlify's documentation skill for your configured AI tools like Claude Code, Cursor, Windsurf, and others. The skill includes component reference, writing standards, and workflow guidance.
-
-See the [AI tools guides](/ai-tools) for tool-specific setup.
+Pages are MDX with YAML frontmatter. Navigation lives in `docs.json`.
 
 ## Development
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+Install the Mintlify CLI:
 
-```
+```bash
 npm i -g mint
 ```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+Then, from the root of this repo (where `docs.json` lives):
 
+```bash
+mint dev              # local preview at http://localhost:3000
+mint broken-links     # check every internal link
+mint a11y             # accessibility check
 ```
-mint dev
-```
 
-View your local preview at `http://localhost:3000`.
+If the dev server misbehaves, run `mint update` to get the latest CLI. A
+page 404ing usually means you're not in a folder with a valid `docs.json`.
 
-## Publishing changes
+## Publishing
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+Changes deploy automatically when they land on `main`. Work directly on
+`main` and push — this repo doesn't use feature branches or pull requests
+for routine documentation updates.
+
+Run `mint broken-links` before you push. There's no PR check to catch a
+bad link after the fact.
+
+## Writing
+
+See [`AGENTS.md`](AGENTS.md) for voice, components, and what does and
+doesn't belong on this site. Internal engineering documentation lives in
+the `rumizi` repo under `docs/` and stays private.
 
 ## Need help?
 
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
 - [Mintlify documentation](https://mintlify.com/docs)
+- Rumizi support: [hi@rumizi.com](mailto:hi@rumizi.com)

@@ -4,7 +4,7 @@
   "name": "Rumizi",
   "description": "Help center for Rumizi vendors and diners.",
   "colors": {
-    "primary": "#16A34A",
+    "primary": "#0E642D",
     "light": "#22C55E",
     "dark": "#15803D"
   },
@@ -35,6 +35,13 @@
             ]
           },
           {
+            "group": "Your workspace",
+            "pages": [
+              "vendors/workspace/hub",
+              "vendors/workspace/tools"
+            ]
+          },
+          {
             "group": "Media",
             "pages": [
               "vendors/media/gallery",
@@ -44,7 +51,7 @@
           {
             "group": "Your venue page",
             "pages": [
-              "vendors/venue/landing-page",
+              "vendors/venue/brand",
               "vendors/venue/theme",
               "vendors/venue/languages"
             ]
@@ -77,9 +84,8 @@
             "pages": [
               "diners/index",
               "diners/scan-and-browse",
-              "diners/accounts",
-              "diners/order-together",
               "diners/menu-assistant",
+              "diners/accounts",
               "diners/languages"
             ]
           },
@@ -98,6 +104,8 @@
             "group": "Reference",
             "pages": [
               "reference/glossary",
+              "reference/catalogs",
+              "reference/restaurants-directory",
               "reference/status"
             ]
           }

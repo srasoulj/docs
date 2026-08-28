@@ -2,7 +2,7 @@
 title: "Rumizi Assistant"
 description: "A copilot inside the vendor workspace. It can create categories, add items, change prices, generate images, and more — always with your confirmation."
 sidebarTitle: "Overview"
-icon: "wand-magic-sparkles"
+icon: "wand-sparkles"
 ---
 
 Rumizi Assistant is the AI copilot inside your workspace. Instead of
@@ -32,8 +32,9 @@ inline control in the header — same panel, closer to hand.
     Generate item or category photos from names and descriptions. Improve
     existing photos.
   </Card>
-  <Card title="Landing page">
-    Update the hero image or content blocks on your venue landing page.
+  <Card title="Brand images">
+    Generate or update your logo and hero image from a prompt or from an
+    existing photo.
   </Card>
   <Card title="Staff and billing">
     Owner-only: generate magic links for staff, start Stripe checkout,
@@ -75,7 +76,7 @@ Reads are instant; writes always wait for you.
 ## Role limits
 
 - **Owners** can use everything: menu edits, schedules, tags, images,
-  landing page, staff magic links, Stripe checkout, slug changes.
+  brand images, staff magic links, Stripe checkout, slug changes.
 - **Staff** can use most menu edits but can't run owner-only actions
   (staff management, billing, slug). The assistant refuses and tells
   you why.
@@ -86,11 +87,27 @@ Alongside the assistant there's a separate **live chat** control for
 human support. It's a different button, powered by Intercom, and
 available only on workspace pages.
 
-## Turning off the AI assistant
+## Talk to it instead of typing
 
-If you'd rather not have the assistant, your admin can disable it for
-your venue. The workspace still works the same way — you just won't see
-the floating button.
+The composer has a **mic**. Tap it, say what you want, tap again to stop,
+and the transcript lands **in the box** — it isn't sent until you press
+send. That's deliberate: speech-to-text mangles dish names, and you should
+read what it heard before it acts on it. Recording stops on its own after a
+minute.
+
+## When it isn't there
+
+Two things switch the assistant off:
+
+- **Your plan.** The Rumizi Assistant is part of **Pro AI** and **Max AI**.
+  On Always Free it's off, along with the diner-facing menu assistant and
+  AI images. See [Plans and billing](/vendors/billing/subscription).
+- **Your preference.** If you'd rather not have it at all, email
+  [hi@rumizi.com](mailto:hi@rumizi.com) and I'll disable it for your venue
+  even on a paid plan.
+
+Either way the workspace works the same — you just won't see the floating
+button, and every edit is done by hand.
 
 ## Related
 
