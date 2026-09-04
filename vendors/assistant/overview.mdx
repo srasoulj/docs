@@ -24,6 +24,10 @@ inline control in the header — same panel, closer to hand.
     Create categories, add items, change prices, write descriptions, set
     stock, rename things in bulk.
   </Card>
+  <Card title="Manage whole menus">
+    Create a new menu, delete an unused one, or merge two menus into one
+    from the conversation.
+  </Card>
   <Card title="Schedules and tags">
     Add and remove time windows on a menu. Create tags and attach them
     to items.
@@ -35,6 +39,20 @@ inline control in the header — same panel, closer to hand.
   <Card title="Brand images">
     Generate or update your logo and hero image from a prompt or from an
     existing photo.
+  </Card>
+  <Card title="Learn from your website">
+    Paste a link to your About page — or a paragraph you already have —
+    and the assistant drafts notes for the venue, a menu, a category, or
+    a specific dish. See [Teach it about your venue](#teach-it-about-your-venue).
+  </Card>
+  <Card title="Reprice from a paste">
+    Paste a CSV, TSV, or semicolon-separated price list and the
+    assistant proposes updates to the dishes you already have. See
+    [Reprice from a pasted list](#reprice-from-a-pasted-list).
+  </Card>
+  <Card title="Preview what a guest is told">
+    Ask "what would a diner get told if they asked about the lamb?" and
+    the assistant runs the real guest chat and shows you its answer.
   </Card>
   <Card title="Staff and billing">
     Owner-only: generate magic links for staff, start Stripe checkout,
@@ -73,6 +91,23 @@ The assistant never changes anything without your **Apply change** tap.
 Reads are instant; writes always wait for you.
 </Note>
 
+## When you disagree with what it did
+
+Under any reply there's a **That's not right** control. Tap it and the
+assistant reads back exactly what it just proposed or applied, and offers
+three follow-ups:
+
+- **Undo** — reverse the change the complaint was about, when the change
+  is reversible.
+- **Try differently** — hand the assistant your correction and let it
+  compose a new plan.
+- **Dismiss** — close the row without doing anything else.
+
+Opening the row itself is what gets counted, so we still hear about a
+dead end even when nothing on offer helped. Complaints while the row is
+unread are deduped, so pressing it twice in frustration doesn't inflate
+the queue.
+
 ## Role limits
 
 - **Owners** can use everything: menu edits, schedules, tags, images,
@@ -94,6 +129,80 @@ and the transcript lands **in the box** — it isn't sent until you press
 send. That's deliberate: speech-to-text mangles dish names, and you should
 read what it heard before it acts on it. Recording stops on its own after a
 minute.
+
+## Show it a photo
+
+The composer also has a **paperclip** for images. Pick a photo of a dish,
+a menu board, or a page from a supplier's catalogue and the assistant can
+see it in the next turn. The photo uploads while you're still typing, so
+you see the thumbnail — and any upload error — before you press send.
+
+Anything you attach is saved to your [gallery](/vendors/media/gallery),
+so a photo you shared with the assistant is one you can also reuse on a
+dish later.
+
+## Teach it about your venue
+
+Filling in the notes the assistant reads dish-by-dish is slow, and most
+of the words already exist on your About page. Ask the assistant to
+**learn about the venue** and paste a URL or a paragraph you already
+have. It reads the page (following the same safety rules as menu URL
+imports), then proposes a batch of context notes — for the venue, one of
+its menus, a category, or a specific dish — as a review card with a
+toggle on each row.
+
+Nothing lands until you approve. You can toggle off rows that got it
+wrong, edit the wording later in the menu editor, or undo the whole
+batch from the transcript.
+
+<Note>
+The assistant refuses a whole-venue fill if it would run to hundreds of
+rows. Ask it to learn about one menu or one category at a time — the
+card stays reviewable, and you can walk through the venue in a few
+passes rather than one wall of notes.
+</Note>
+
+## Reprice from a pasted list
+
+If your prices live in a spreadsheet, paste the rows into the
+conversation and ask the assistant to **update prices from this list**.
+It accepts comma-, tab-, or semicolon-separated values, matches each row
+to a dish by name, and proposes a batch of price updates — one row per
+change, with the old price beside the new one.
+
+<Warning>
+This flow **updates existing dishes**. Rows that match no dish are
+reported back rather than created — creating a new dish needs a
+category, and the list rarely names one. For a brand-new menu, use
+[Upload a menu file](/vendors/menu/upload) instead.
+</Warning>
+
+The parser is strict where it matters:
+
+- **Money.** `190,000` reads as one hundred and ninety thousand, not
+  190 point something — decimals and thousands separators are picked
+  apart per row, and anything genuinely ambiguous is refused with its
+  line number.
+- **Names.** A row whose name matches two dishes matches neither. The
+  assistant tells you which rows collided so you can rename or send a
+  clearer list.
+- **Nothing changed** rows are skipped, so re-pasting the current list
+  produces an empty plan instead of proposing the menu back to itself.
+
+`.xlsx` files aren't supported yet — export to CSV first.
+
+## See what a guest would be told
+
+Every note you write says "diners read this," but until now nothing
+actually showed you a diner reading it. Ask the assistant something like
+*"what would a guest be told if they asked whether the lamb is spicy?"*
+and it runs the **real** guest chat against your live menu and shows you
+the reply.
+
+The preview reads working rows, so a note you just approved is already
+in the answer. The previewed guest is nobody in particular — no dietary
+profile, no dislikes — and the run is not recorded in your diner
+analytics.
 
 ## When it isn't there
 
