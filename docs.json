@@ -38,6 +38,7 @@
             "group": "Your workspace",
             "pages": [
               "vendors/workspace/hub",
+              "vendors/workspace/knowledge",
               "vendors/workspace/tools"
             ]
           },
