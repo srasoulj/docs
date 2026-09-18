@@ -77,16 +77,19 @@ Rumizi has **three** plans. If you're about to say "$35 a month" or "one
 simple plan", you are working from stale information — stop and check the
 billing page.
 
-- **Always Free** — $0. One menu, 5 categories, 50 items. No AI features.
-- **Pro AI** — $99/month or $990/year. Unlimited content, all AI, $50 of
-  AI usage per period.
-- **Max AI** — $249/month or $2,490/year. Same as Pro, $150 of AI usage.
+- **Always Free** — $0. Unlimited menus, categories, and dishes, plus the
+  QR code and a custom domain. No AI features.
+- **Pro AI** — $199/month or $1,990/year. Everything in Free, plus the
+  diner menu assistant for up to **50 guests a day**, AI image generation,
+  and the workspace copilot.
+- **Max AI** — $499/month or $4,990/year. Same as Pro, up to **150 guests
+  a day**.
 
-New venues get **30 days of Pro AI** free. When a trial ends without a
-subscription the venue moves to **Always Free** — it is *not* blocked and
-the public menu is *not* paused. AI menu extraction works on every plan,
-including Free; the menu assistant, the workspace assistant, and AI image
-generation do not.
+New venues get **two calendar months of Pro AI** free. When a trial ends
+without a subscription the venue moves to **Always Free** — it is *not*
+blocked and the public menu is *not* paused. AI menu extraction works on
+every plan, including Free; the menu assistant, the workspace assistant,
+and AI image generation do not.
 
 ## Topics to stay away from
 

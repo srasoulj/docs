@@ -24,9 +24,12 @@ the status page.
 These have drifted before. Verify against the `rumizi` repo rather than
 memory:
 
-- **Plans.** Three of them — Always Free ($0), Pro AI ($99/mo · $990/yr),
-  Max AI ($249/mo · $2,490/yr). 30-day Pro trial; expiry drops a venue to
-  Free, it does not block the menu. Source: `src/lib/vendor-plan.ts`.
+- **Plans.** Three of them — Always Free ($0), Pro AI ($199/mo · $1,990/yr),
+  Max AI ($499/mo · $4,990/yr). Two-calendar-month Pro trial; expiry drops
+  a venue to Free, it does not block the menu. Free has no content limits
+  (menus, categories, and items are all unmetered); paid tiers sell AI
+  capacity — up to 50 daily guest conversations on Pro and 150 on Max.
+  Source: `src/lib/vendor-plan.ts`.
 - **The diner entry point.** `rumizi.com/{venue}` is the chat home; the
   browsable menu is `rumizi.com/{venue}/menu`. Source:
   `src/lib/vendor-site-paths.ts`.
