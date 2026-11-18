@@ -183,13 +183,28 @@ Quick answers to the questions I hear most. If yours isn't here, email
   <Accordion title="How do I sign in?">
     Go to `rumizi.com/login` and give an email address or phone number.
     You'll get a one-time code to type in; by email you also get a magic
-    link you can tap instead. **Google** and **Apple** work too. If your
-    account manages more than one venue, you pick which one after signing
-    in.
+    link. Open the link, then tap **Sign in** on the page it lands on to
+    finish — opening the link alone no longer signs you in, so a mail
+    client that previews links can't spend yours before you click.
+    **Google** and **Apple** work too. If your account manages more than
+    one venue, you pick which one after signing in — and once you're in,
+    the header has a [venue switcher](/vendors/workspace/hub#switching-venues)
+    for jumping between them.
   </Accordion>
   <Accordion title="I lost my sign-in link.">
     Request a new one from the login page. Each link and code is
-    one-time use.
+    one-time use: once a link is spent, re-opening it just shows a
+    short "This link may have already been used" page. Grab a fresh
+    one from `rumizi.com/login` and it works the same way.
+  </Accordion>
+  <Accordion title="I invited a staff member by phone number and they can't sign in.">
+    Fixed in the 2026-09-25 release. Older versions stored punctuated
+    phone numbers (`+1 (555) 123-4567`) in a shape phone sign-in
+    couldn't match, so the person was invited but never found by the
+    login page. Rumizi has since normalized every stored phone number
+    on record. Ask the staff member to try `rumizi.com/login` again —
+    typing the number plain or formatted both work. If it still fails,
+    open **More → Staff**, remove the row, and re-invite.
   </Accordion>
 </AccordionGroup>
 
